@@ -1,140 +1,124 @@
 [
   {
-    "_comment": "Programming and Web Development skills",
-    "name": "Python",
-    "category": "Technical & Professional Skills",
-    "subcategory": "Programming & Web",
-    "project": "Thesis",
-    "link": "projects/Thesis.html"
+    "name": "Android Studio",
+    "category": "Programming & Software Development",
+    "subcategory": "mobile development",
+    "project": "social_engagement",
+    "link": "projects/social_engagement.html"
   },
   {
-    "_comment": "Programming and Web Development skills",
-    "name": "Java",
-    "category": "Technical & Professional Skills",
-    "subcategory": "Programming & Web",
-    "project": "Ancient Gatekeeper",
-    "link": "projects/android_app.html"
+    "name": "Android SDK",
+    "category": "Programming & Software Development",
+    "subcategory": "mobile development",
+    "project": "social_engagement",
+    "link": "projects/social_engagement.html"
   },
   {
-    "_comment": "Programming and Web Development skills",
-    "name": "C++ / C / C#",
-    "category": "Technical & Professional Skills",
-    "subcategory": "Programming & Web",
-    "project": "project_template",
-    "link": "projects/project_template.html"
+    "name": "XML",
+    "category": "Programming & Software Development",
+    "subcategory": "mobile development",
+    "project": "social_engagement",
+    "link": "projects/social_engagement.html"
   },
   {
-    "_comment": "Programming and Web Development skills",
-    "name": "HTML & CSS",
-    "category": "Technical & Professional Skills",
-    "subcategory": "Programming & Web",
-    "project": "In Case You Need Cleaning",
-    "link": "projects/In_case_you_ne.html"
+    "name": "Object-Oriented Programming (OOP)",
+    "category": "Programming & Software Development",
+    "subcategory": "Architecture & Data Management",
+    "project": "social_engagement",
+    "link": "projects/social_engagement.html"
   },
   {
-    "_comment": "Programming and Web Development skills",
-    "name": "SQL / MySQL / SQLite3",
-    "category": "Technical & Professional Skills",
-    "subcategory": "Programming & Web",
-    "project": "In Case You Need Cleaning",
-    "link": "projects/In_case_you_ne.html"
+    "name": "Entity-Relationship (ER) Modeling",
+    "category": "Programming & Software Development",
+    "subcategory": "Architecture & Data Management",
+    "project": "social_engagement",
+    "link": "projects/social_engagement.html"
   },
   {
-    "_comment": "Programming and Web Development skills",
-    "name": "Processing",
-    "category": "Technical & Professional Skills",
-    "subcategory": "Programming & Web",
-    "project": "Beneath The Weight",
-    "link": "projects/Beneath_the_w.html"
+    "name": "human-computer interaction (HCI)",
+    "category": "UI/UX Design & interaction Design",
+    "subcategory": "Design process and frameworks",
+    "project": "social_engagement",
+    "link": "projects/social_engagement.html"
+  },{
+    "name": "Design thinking model",
+    "category": "UI/UX Design & interaction Design",
+    "subcategory": "Design process and frameworks",
+    "project": "social_engagement",
+    "link": "projects/social_engagement.html"
+  },{
+    "name": "Iterative design",
+    "category": "UI/UX Design & interaction Design",
+    "subcategory": "Design process and frameworks",
+    "project": "social_engagement",
+    "link": "projects/social_engagement.html"
   },
   {
-    "_comment": "Programming and Web Development skills",
-    "name": "Arduino",
-    "category": "Technical & Professional Skills",
-    "subcategory": "Programming & Web",
-    "project": "Beneath The Weight",
-    "link": "projects/Beneath_the_w.html"
+    "name": "User experience (UX)",
+    "category": "UI/UX Design & interaction Design",
+    "subcategory": "Interface design",
+    "project": "social_engagement",
+    "link": "projects/social_engagement.html"
+  },
+{
+    "name": "User interface (UI)",
+    "category": "UI/UX Design & interaction Design",
+    "subcategory": "Interface design",
+    "project": "social_engagement",
+    "link": "projects/social_engagement.html"
+  },{
+    "name": "Wireframing",
+    "category": "UI/UX Design & interaction Design",
+    "subcategory": "Interface design",
+    "project": "social_engagement",
+    "link": "projects/social_engagement.html"
+  },{
+    "name": "ad-hoc persona creation",
+    "category": "UI/UX Design & interaction Design",
+    "subcategory": "Interface design",
+    "project": "social_engagement",
+    "link": "projects/social_engagement.html"
+  },{
+    "name": "Affordance",
+    "category": "UI/UX Design & interaction Design",
+    "subcategory": "design principles",
+    "project": "social_engagement",
+    "link": "projects/social_engagement.html"
   },
   {
-    "_comment": "Programming and Web Development skills",
-    "name": "JavaScript",
-    "category": "Technical & Professional Skills",
-    "subcategory": "Programming & Web",
-    "project": "project_template",
-    "link": "projects/project_template.html"
-  },
-  {
-    "_comment": "UX, HCI & Methodologies",
-    "name": "User Experience (UX / UI Design)",
-    "category": "Technical & Professional Skills",
-    "subcategory": "UX, HCI & Methods",
-    "project": "In Case You Need Cleaning",
-    "link": "projects/In_case_you_ne.html"
-  },
-  {
-    "_comment": "UX, HCI & Methodologies",
-    "name": "Wireframing & Usability Testing",
-    "category": "Technical & Professional Skills",
-    "subcategory": "UX, HCI & Methods",
-    "project": "In Case You Need Cleaning",
-    "link": "projects/In_case_you_ne.html"
-  },
-  {
-    "_comment": "UX, HCI & Methodologies",
-    "name": "Agile Software Engineering (Scrum / XP)",
-    "category": "Technical & Professional Skills",
-    "subcategory": "UX, HCI & Methods",
-    "project": "Thesis",
-    "link": "projects/Thesis.html"
-  },
-  {
-    "_comment": "UX, HCI & Methodologies",
-    "name": "Conversational User Interfaces (CUIs & AI)",
-    "category": "Technical & Professional Skills",
-    "subcategory": "UX, HCI & Methods",
-    "project": "Thesis",
-    "link": "projects/Thesis.html"
-  },
-  {
-    "_comment": "Tools, Hardware & Design",
-    "name": "Figma",
-    "category": "Technical & Professional Skills",
-    "subcategory": "Tools & Hardware",
-    "project": "Luscinia",
-    "link": "projects/luscinia.html"
-  },
-  {
-    "_comment": "Tools, Hardware & Design",
-    "name": "Unity",
-    "category": "Technical & Professional Skills",
-    "subcategory": "Tools & Hardware",
-    "project": "Ancient Gatekeeper",
-    "link": "projects/android_app.html"
-  },
-  {
-    "_comment": "Tools, Hardware & Design",
-    "name": "Rhino 3D & Autodesk Maya",
-    "category": "Technical & Professional Skills",
-    "subcategory": "Tools & Hardware",
-    "project": "Beneath The Weight",
-    "link": "projects/Beneath_the_w.html"
-  },
-  {
-    "_comment": "Tools, Hardware & Design",
-    "name": "Android Studio & IntelliJ",
-    "category": "Technical & Professional Skills",
-    "subcategory": "Tools & Hardware",
-    "project": "Ancient Gatekeeper",
-    "link": "projects/android_app.html"
-  },
-  {
-    "_comment": "Tools, Hardware & Design",
-    "name": "Physical Computing & Sensors",
-    "category": "Technical & Professional Skills",
-    "subcategory": "Tools & Hardware",
-    "project": "Beneath The Weight",
-    "link": "projects/Beneath_the_w.html"
+    "name": "Natural mapping",
+    "category": "UI/UX Design & interaction Design",
+    "subcategory": "design principles",
+    "project": "social_engagement",
+    "link": "projects/social_engagement.html"
+  },{
+    "name": "heuristic evaluation",
+    "category": "UI/UX Design & interaction Design",
+    "subcategory": "evaluation and testing",
+    "project": "social_engagement",
+    "link": "projects/social_engagement.html"
+  },{
+    "name": "usability testing",
+    "category": "UI/UX Design & interaction Design",
+    "subcategory": "evaluation and testing",
+    "project": "social_engagement",
+    "link": "projects/social_engagement.html"
+  },{
+    "name": "Think-aloud protocol",
+    "category": "UI/UX Design & interaction Design",
+    "subcategory": "evaluation and testing",
+    "project": "social_engagement",
+    "link": "projects/social_engagement.html"
   }
+
+
+,{
+    "name": "Figma",
+    "category": "creative and multimedia skills",
+    "subcategory": "design and prototyping",
+    "project": "social_engagement",
+    "link": "projects/social_engagement.html"
+  }
+
+
 ]
-
-
