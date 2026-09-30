@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Annabell Linné Jensen – Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Stylesheet connection -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- HERO SECTION / ABOUT ME -->
+        <header class="hero-section">
+            <div class="hero-badge">Portfolio</div>
+            <h1 class="hero-title">Luna Annabell Linné Jensen</h1>
+            <p class="hero-subtitle">MSc in Digitalisation and Application Development • BA in Art and Technology</p>
+            
+            <p class="hero-bio">
+                I move in the crossroads between strong technical development, system understanding, and aesthetic interactive design. Translating code and digital data into intuitive UX-design and robust applications.
+            </p>
+
+            <!-- Knapper med navigation til specifikke sektioner -->
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-accent">View Projects</a>
+                <a href="#contact" class="btn">Get in Touch</a>
+            </div>
+
+            <!-- Info Pills -->
+            <div class="info-pills">
+                <span class="pill">Aalborg, Denmark</span>
+                <span class="pill">Graduated June 2026</span>
+                <span class="pill">Open to full-time roles</span>
+            </div>
+
+            <!-- CV Download knap / link hvis ønsket -->
+            <div style="margin-top: 1rem;">
+                <a href="Combine - CV.pdf" class="btn" download>Download CV (PDF)</a>
+            </div>
+        </header>
+
+        <!-- DIGITAL & SYSTEM PROJECTS -->
+        <section id="projects">
+            <h2>Selected Digital & System Projects</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <span class="tag">AI & Conversational UX</span>
+                    <h3>Master's Thesis: "I'll just ask ChatGPT..."</h3>
+                    <p>A qualitative study of human-AI interaction and sense-making regarding physical and mental well-being.</p>
+                    <a href="projects/project_template.html" class="btn">Read Case Study</a>
+                </div>
+
+                <div class="project-card">
+                    <span class="tag">Full-Stack & Agentic AI</span>
+                    <h3>In Case You Need Cleaning</h3>
+                    <p>AI-supported, conversational booking platform designed to optimize customer journeys and internal operational efficiency, built in Python/Flask with SQLite and Google Calendar API.</p>
+                    <a href="projects/In_case_you_ne.html" class="btn">Read Case Study</a>
+                </div>
+
+                <div class="project-card">
+                    <span class="tag">Android App / Java</span>
+                    <h3>Social Engagement & App Architecture</h3>
+                    <p>Mobile application developed in Android Studio (Java/XML) following a layered architecture with a strong focus on user-centered design and interaction features.</p>
+                    <a href="projects/android_app.html" class="btn">Read Case Study</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CREATIVE & PHYSICAL INSTALLATIONS -->
+        <section>
+            <h2>Creative & Physical Installations</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <span class="tag">Physical Computing / Hardware</span>
+                    <h3>Beneath The Weight</h3>
+                    <div class="image-frame">
+                        <img src="img/beneath_the_weight.jpg" alt="Beneath The Weight" class="project-img">
+                    </div>
+                    <p>Interactive sculpture exhibited at Bæredygtighedsfestivalen in Aalborg. Integration of linear actuators, M5Stack, and real-time audio analysis translating climate data into physical movement.</p>
+                    <a href="projects/Beneath_the_w.html" class="btn">Read Case Study</a>
+                </div>
+
+                <div class="project-card">
+                    <span class="tag">Scenography & Media Integration</span>
+                    <h3>Luscinia, Luscinia: The Nightingale</h3>
+                    <p>Post-dramatic theatrical performance featuring moveable scenography, projection mapping (MadMapper), and integrated digital media.</p>
+                    <a href="projects/luscinia.html" class="btn">Read Case Study</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION (Dynamically generated from skills.json) -->
+        <section id="skills">
+            <h2>Technical & Professional Skills</h2>
+            <div class="skills-grid" id="skills-grid-container">
+                <!-- Skill boxes are automatically inserted here via JavaScript -->
+            </div>
+        </section>
+
+        <!-- JAVASCRIPT TO LOAD SKILLS -->
+        <script>
+            fetch('skills.json')
+                .then(response => response.json())
+                .then(skills => {
+                    const container = document.getElementById('skills-grid-container');
+                    
+                    // Group skills by subcategory
+                    const grouped = skills.reduce((acc, skill) => {
+                        if (!acc[skill.subcategory]) {
+                            acc[skill.subcategory] = [];
+                        }
+                        acc[skill.subcategory].push(skill);
+                        return acc;
+                    }, {});
+
+                    // Build the HTML structure for each subcategory box
+                    for (const [subcat, items] of Object.entries(grouped)) {
+                        const box = document.createElement('div');
+                        box.className = 'skill-box';
+                        
+                        let listItems = items.map(item => `
+                            <li>
+                                <a href="${item.link}" title="Learned in: ${item.project}" style="color: inherit; text-decoration: none; border-bottom: 1px dotted currentColor; cursor: help;">
+                                    ${item.name}
+                                </a>
+                            </li>
+                        `).join('');
+
+                        box.innerHTML = `
+                            <h3>${subcat}</h3>
+                            <ul style="padding-left: 0; margin: 0;">${listItems}</ul>
+                        `;
+                        
+                        container.appendChild(box);
+                    }
+                })
+                .catch(error => console.error('Error loading skills.json:', error));
+        </script>
+
+        <!-- EDUCATION SECTION -->
+        <section>
+            <h2>Education</h2>
+            <div class="edu-item" style="margin-bottom: 1.5rem;">
+                <h3>MSc (Cand.it.) in Digitalization and Application Development</h3>
+                <div class="edu-place">Aalborg University • 2024 – 2026</div>
+                <p>Specialization in solving complex challenges through cross-disciplinary collaboration, system development, data visualization, and user-centered design.</p>
+            </div>
+
+            <div class="edu-item">
+                <h3>BA in Art and Technology</h3>
+                <div class="edu-place">Aalborg University • 2021 – 2024</div>
+                <p>Focus on concept development, interaction design, Human-Computer Interaction (HCI), and the integration of hardware and software.</p>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" style="margin-bottom: 3rem;">
+            <h2>Contact</h2>
+            <div class="contact-card">
+                <div class="contact-item">
+                    <strong>LinkedIn</strong>
+                    <span><a href="https://www.linkedin.com/in/luna-annabell-linn%C3%A9-jensen" target="_blank">www.linkedin.com/in/luna-annabell-linné-jensen</a></span>
+                </div>
+
+                <div class="contact-item">
+                    <strong>GitHub</strong>
+                    <span><a href="https://github.com/LunaAnnabell" target="_blank">https://github.com/LunaAnnabell</a></span>
+                </div>
+
+                <div class="contact-item">
+                    <strong>Email</strong>
+                    <span><a href="mailto:Lunaannabell@outlook.dk">lunaannabell@outlook.dk</a></span>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
