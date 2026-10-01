@@ -236,6 +236,34 @@ section {
     margin-bottom: 1.5rem;
 }
 
+.additional-projects-section {
+    margin-top: -1.5rem;
+}
+
+.additional-projects {
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+}
+
+.additional-projects summary {
+    color: var(--accent);
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    list-style-position: inside;
+}
+
+.additional-projects .projects-grid {
+    margin-top: 1.5rem;
+}
+
+.additional-projects .project-card {
+    background-color: transparent;
+    box-shadow: none;
+    padding: 1.25rem;
+}
+
 /* ==========================================================================
    6. UNIVERSAL FRAMES & SEPARATE IMAGE SIZES
    ========================================================================== */
@@ -315,14 +343,76 @@ section {
     color: var(--accent);
 }
 
+.skills-heading {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.skills-heading h2 {
+    flex: 1;
+}
+
+.skill-subcategory-toggle {
+    background: none;
+    border: 0;
+    padding: 0;
+    color: var(--accent);
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.skill-subcategory-toggle:hover {
+    text-decoration: underline;
+}
+
+.skill-subcategory-label {
+    display: none;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-main);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    padding-bottom: 0.25rem;
+    text-transform: uppercase;
+}
+
+.skills-grid.show-subcategories .skill-subcategory-label {
+    display: block;
+}
+
 .skill-box ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
     list-style: none;
+    padding-left: 0;
 }
 
 .skill-box li {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    margin-bottom: 0.4rem;
+    background-color: #f0ede6;
+    border-radius: 2px;
+    color: var(--accent);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    padding: 0.25rem 0.45rem;
+    text-transform: uppercase;
+}
+
+.skill-box li.skill-subcategory-heading {
+    display: none;
+    background: transparent;
+    flex-basis: 100%;
+    margin-top: 0.35rem;
+    padding: 0;
+}
+
+.skills-grid.show-subcategories .skill-box li.skill-subcategory-heading {
+    display: block;
 }
 
 /* Education Items */

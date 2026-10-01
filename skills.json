@@ -114,11 +114,226 @@
 
 ,{
     "name": "Figma",
-    "category": "creative and multimedia skills",
+    "category": "Creative & Multimedia Skills",
     "subcategory": "design and prototyping",
     "project": "social_engagement",
     "link": "projects/social_engagement.html"
+  },
+  {
+    "name": "ChatGPT",
+    "category": "Research & Analysis",
+    "subcategory": "AI and qualitative research",
+    "project": "thesis",
+    "link": "projects/Thesis.html"
+  },
+  {
+    "name": "Reflexive Thematic Analysis",
+    "category": "Research & Analysis",
+    "subcategory": "AI and qualitative research",
+    "project": "thesis",
+    "link": "projects/Thesis.html"
+  },
+  {
+    "name": "Whisper / NoScribe",
+    "category": "Research & Analysis",
+    "subcategory": "AI and qualitative research",
+    "project": "thesis",
+    "link": "projects/Thesis.html"
+  },
+  {
+    "name": "Microsoft Excel and VBA",
+    "category": "Programming & Software Development",
+    "subcategory": "data processing",
+    "project": "thesis",
+    "link": "projects/Thesis.html"
+  },
+  {
+    "name": "Python",
+    "category": "Programming & Software Development",
+    "subcategory": "web development",
+    "project": "in_case_you_need_cleaning",
+    "link": "projects/In_case_you_need_cleaning.html"
+  },
+  {
+    "name": "Flask",
+    "category": "Programming & Software Development",
+    "subcategory": "web development",
+    "project": "in_case_you_need_cleaning",
+    "link": "projects/In_case_you_need_cleaning.html"
+  },
+  {
+    "name": "MySQL",
+    "category": "Programming & Software Development",
+    "subcategory": "databases and APIs",
+    "project": "in_case_you_need_cleaning",
+    "link": "projects/In_case_you_need_cleaning.html"
+  },
+  {
+    "name": "OpenAI tool-calling interface",
+    "category": "Programming & Software Development",
+    "subcategory": "databases and APIs",
+    "project": "in_case_you_need_cleaning",
+    "link": "projects/In_case_you_need_cleaning.html"
+  },
+  {
+    "name": "Google Calendar OAuth 2.0",
+    "category": "Programming & Software Development",
+    "subcategory": "databases and APIs",
+    "project": "in_case_you_need_cleaning",
+    "link": "projects/In_case_you_need_cleaning.html"
+  },
+  {
+    "name": "Arduino",
+    "category": "Physical Computing & Hardware",
+    "subcategory": "embedded systems",
+    "project": "bachlor",
+    "link": "projects/Beneath_the_weight.html"
+  },
+  {
+    "name": "Processing",
+    "category": "Physical Computing & Hardware",
+    "subcategory": "embedded systems",
+    "project": "bachlor",
+    "link": "projects/Beneath_the_weight.html"
+  },
+  {
+    "name": "Open Sound Control (OSC)",
+    "category": "Physical Computing & Hardware",
+    "subcategory": "embedded systems",
+    "project": "bachlor",
+    "link": "projects/Beneath_the_weight.html"
+  },
+  {
+    "name": "M5Stack and sensor integration",
+    "category": "Physical Computing & Hardware",
+    "subcategory": "embedded systems",
+    "project": "bachlor",
+    "link": "projects/Beneath_the_weight.html"
+  },
+  {
+    "name": "Webcam motion detection",
+    "category": "Physical Computing & Hardware",
+    "subcategory": "interactive installations",
+    "project": "2._semester",
+    "link": "projects/Gabelsland.html"
+  },
+  {
+    "name": "Serial communication",
+    "category": "Physical Computing & Hardware",
+    "subcategory": "interactive installations",
+    "project": "2._semester",
+    "link": "projects/Gabelsland.html"
+  },
+  {
+    "name": "Interactive installation design",
+    "category": "Creative & Multimedia Skills",
+    "subcategory": "interactive installations",
+    "project": "2._semester",
+    "link": "projects/Gabelsland.html"
+  },
+  {
+    "name": "TouchDesigner",
+    "category": "Creative & Multimedia Skills",
+    "subcategory": "interactive media",
+    "project": "4._semester",
+    "link": "projects/hope.html"
+  },
+  {
+    "name": "Arduino IDE",
+    "category": "Physical Computing & Hardware",
+    "subcategory": "interactive media",
+    "project": "4._semester",
+    "link": "projects/hope.html"
+  },
+  {
+    "name": "Python",
+    "category": "Programming & Software Development",
+    "subcategory": "interactive media",
+    "project": "4._semester",
+    "link": "projects/hope.html"
+  },
+  {
+    "name": "Open Sound Control (OSC)",
+    "category": "Creative & Multimedia Skills",
+    "subcategory": "interactive media",
+    "project": "4._semester",
+    "link": "projects/hope.html"
+  },
+  {
+    "name": "Arduino C++",
+    "category": "Physical Computing & Hardware",
+    "subcategory": "wearable technology",
+    "project": "3._semester",
+    "link": "projects/Symbiotic.html"
+  },
+  {
+    "name": "AFMotor library",
+    "category": "Physical Computing & Hardware",
+    "subcategory": "wearable technology",
+    "project": "3._semester",
+    "link": "projects/Symbiotic.html"
+  },
+  {
+    "name": "Galvanic Skin Response (GSR) sensing",
+    "category": "Physical Computing & Hardware",
+    "subcategory": "wearable technology",
+    "project": "3._semester",
+    "link": "projects/Symbiotic.html"
+  },
+  {
+    "name": "FastLED and Adafruit NeoPixel",
+    "category": "Physical Computing & Hardware",
+    "subcategory": "interactive sculpture",
+    "project": "semester",
+    "link": "projects/The_act_of_helping.html"
+  },
+  {
+    "name": "Ultrasonic sensing",
+    "category": "Physical Computing & Hardware",
+    "subcategory": "interactive sculpture",
+    "project": "semester",
+    "link": "projects/The_act_of_helping.html"
+  },
+  {
+    "name": "Photoresistors and contact switches",
+    "category": "Physical Computing & Hardware",
+    "subcategory": "interactive sculpture",
+    "project": "semester",
+    "link": "projects/The_act_of_helping.html"
+  },
+  {
+    "name": "MadMapper",
+    "category": "Creative & Multimedia Skills",
+    "subcategory": "projection and theatre",
+    "project": "luscinia",
+    "link": "projects/luscinia.html"
+  },
+  {
+    "name": "Projection mapping",
+    "category": "Creative & Multimedia Skills",
+    "subcategory": "projection and theatre",
+    "project": "luscinia",
+    "link": "projects/luscinia.html"
+  },
+  {
+    "name": "Python and Flask",
+    "category": "Programming & Software Development",
+    "subcategory": "web development",
+    "project": "balancing_nutrition",
+    "link": "projects/Balancing_nutrition.html"
+  },
+  {
+    "name": "SQLite3",
+    "category": "Programming & Software Development",
+    "subcategory": "web development",
+    "project": "balancing_nutrition",
+    "link": "projects/Balancing_nutrition.html"
+  },
+  {
+    "name": "Google Charts",
+    "category": "Programming & Software Development",
+    "subcategory": "data visualization",
+    "project": "balancing_nutrition",
+    "link": "projects/Balancing_nutrition.html"
   }
-
-
 ]

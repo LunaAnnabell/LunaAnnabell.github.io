@@ -42,63 +42,99 @@
             </div>
         </header>
 
-        <!-- DIGITAL & SYSTEM PROJECTS -->
+        <!-- PROJECTS -->
         <section id="projects">
-            <h2>Selected Digital & System Projects</h2>
+            <h2>Featured Projects</h2>
             <div class="projects-grid">
-                
+
                 <div class="project-card">
-                    <span class="tag">AI & Conversational UX</span>
-                    <h3>Master's Thesis: "I'll just ask ChatGPT..."</h3>
-                    <p>A qualitative study of human-AI interaction and sense-making regarding physical and mental well-being.</p>
-                    <a href="projects/project_template.html" class="btn">Read Case Study</a>
+                    <span class="tag">Master's Thesis / HCI</span>
+                    <h3>"I'll just ask ChatGPT..."</h3>
+                    <p>A study of how conversational AI helps people make sense of everyday physical and mental well-being concerns.</p>
+                    <a href="projects/Thesis.html" class="btn">Read Case Study</a>
                 </div>
 
                 <div class="project-card">
-                    <span class="tag">Full-Stack & Agentic AI</span>
+                    <span class="tag">Interactive Systems / AI</span>
                     <h3>In Case You Need Cleaning</h3>
-                    <p>AI-supported, conversational booking platform designed to optimize customer journeys and internal operational efficiency, built in Python/Flask with SQLite and Google Calendar API.</p>
-                    <a href="projects/In_case_you_ne.html" class="btn">Read Case Study</a>
+                    <p>An AI-supported service-booking system exploring conversational automation and streamlined user workflows.</p>
+                    <a href="projects/In_case_you_need_cleaning.html" class="btn">Read Case Study</a>
                 </div>
 
                 <div class="project-card">
-                    <span class="tag">Interaction Design / Human-Computer Interaction (HCI)</span>
-                    <h3>Social Engagement & App Architecture</h3>
-                    <p>Mobile application developed in Android Studio (Java/XML) following a layered architecture with a strong focus on user-centered design and interaction features.</p>
-                    <a href="projects/android_app.html" class="btn">Read Case Study</a>
+                    <span class="tag">HCI / Android Development</span>
+                    <h3>Social Engagement Through Interactive Design</h3>
+                    <p>A user-centered Android application designed to help newcomers discover events and build meaningful social connections.</p>
+                    <a href="projects/Social_engagement.html" class="btn">Read Case Study</a>
+                </div>
+
+                <div class="project-card">
+                    <span class="tag">Physical Computing / Hardware</span>
+                    <h3>Beneath The Weight</h3>
+                    <p>A dynamic climate sculpture combining recycled materials, moving hardware, and sound to invite public reflection.</p>
+                    <a href="projects/Beneath_the_weight.html" class="btn">Read Case Study</a>
                 </div>
 
             </div>
         </section>
 
-        <!-- CREATIVE & PHYSICAL INSTALLATIONS -->
-        <section>
-            <h2>Creative & Physical Installations</h2>
-            <div class="projects-grid">
-                
-                <div class="project-card">
-                    <span class="tag">Physical Computing / Hardware</span>
-                    <h3>Beneath The Weight</h3>
-                    <div class="image-frame">
-                        <img src="img/beneath_the_weight.jpg" alt="Beneath The Weight" class="project-img">
+        <section class="additional-projects-section">
+            <details class="additional-projects">
+                <summary>View additional projects</summary>
+                <div class="projects-grid">
+
+                    <div class="project-card">
+                        <span class="tag">Web Solution Development</span>
+                        <h3>Balancing Nutrition and Sustainability</h3>
+                        <p>A web application helping users compare nutrition, calories, and environmental impact when making dietary choices.</p>
+                        <a href="projects/Balancing_nutrition.html" class="btn">Read Case Study</a>
                     </div>
-                    <p>Interactive sculpture exhibited at Bæredygtighedsfestivalen in Aalborg. Integration of linear actuators, M5Stack, and real-time audio analysis translating climate data into physical movement.</p>
-                    <a href="projects/Beneath_the_weight.html" class="btn">Read Case Study</a>
-                </div>
 
-                <div class="project-card">
-                    <span class="tag">Scenography & Media Integration</span>
-                    <h3>Luscinia, Luscinia: The Nightingale</h3>
-                    <p>Post-dramatic theatrical performance featuring moveable scenography, projection mapping (MadMapper), and integrated digital media.</p>
-                    <a href="projects/luscinia.html" class="btn">Read Case Study</a>
-                </div>
+                    <div class="project-card">
+                        <span class="tag">Narratives and Interaction</span>
+                        <h3>New Media in Relation to Narration</h3>
+                        <p>An analysis of how projection mapping, puppetry, sound, and physical acting shape the theatrical world of Luscinia.</p>
+                        <a href="projects/luscinia.html" class="btn">Read Case Study</a>
+                    </div>
 
-            </div>
+                    <div class="project-card">
+                        <span class="tag">Art and Technology / P4</span>
+                        <h3>HOPE</h3>
+                        <p>An interactive video installation developed through autoethnographic methods to explore experiences of the Danish psychiatric system.</p>
+                        <a href="projects/hope.html" class="btn">Read Case Study</a>
+                    </div>
+
+                    <div class="project-card">
+                        <span class="tag">Art and Technology / P3</span>
+                        <h3>Symbiotic Wellbeing</h3>
+                        <p>A living wearable garment exploring mental health, nature, and human-nature relations through sensors and automated watering.</p>
+                        <a href="projects/Symbiotic.html" class="btn">Read Case Study</a>
+                    </div>
+
+                    <div class="project-card">
+                        <span class="tag">Art and Technology / P2</span>
+                        <h3>Gabelsland</h3>
+                        <p>A responsive tunnel installation designed to transform Gabels Torv from a transit zone into an interactive public space.</p>
+                        <a href="projects/Gabelsland.html" class="btn">Read Case Study</a>
+                    </div>
+
+                    <div class="project-card">
+                        <span class="tag">Art and Technology / P1</span>
+                        <h3>The Act of Helping</h3>
+                        <p>An interactive light sculpture using puzzle pieces and responsive lighting to explore mental health and mutual support.</p>
+                        <a href="projects/The_act_of_helping.html" class="btn">Read Case Study</a>
+                    </div>
+
+                </div>
+            </details>
         </section>
 
         <!-- SKILLS SECTION (Dynamically generated from skills.json) -->
         <section id="skills">
-            <h2>Technical & Professional Skills</h2>
+            <div class="skills-heading">
+                <h2>Technical & Professional Skills</h2>
+                <button type="button" id="skill-subcategory-toggle" class="skill-subcategory-toggle" aria-expanded="false">Show subcategories</button>
+            </div>
             <div class="skills-grid" id="skills-grid-container">
                 <!-- Skill boxes are automatically inserted here via JavaScript -->
             </div>
@@ -111,35 +147,55 @@
                 .then(skills => {
                     const container = document.getElementById('skills-grid-container');
                     
-                    // Group skills by subcategory
+                    // Group skills by broad category
                     const grouped = skills.reduce((acc, skill) => {
-                        if (!acc[skill.subcategory]) {
-                            acc[skill.subcategory] = [];
+                        if (!acc[skill.category]) {
+                            acc[skill.category] = [];
                         }
-                        acc[skill.subcategory].push(skill);
+                        acc[skill.category].push(skill);
                         return acc;
                     }, {});
 
-                    // Build the HTML structure for each subcategory box
-                    for (const [subcat, items] of Object.entries(grouped)) {
+                    // Build one category box with smaller subcategory groups inside it
+                    for (const [category, items] of Object.entries(grouped)) {
                         const box = document.createElement('div');
                         box.className = 'skill-box';
-                        
-                        let listItems = items.map(item => `
-                            <li>
-                                <a href="${item.link}" title="Learned in: ${item.project}" style="color: inherit; text-decoration: none; border-bottom: 1px dotted currentColor; cursor: help;">
-                                    ${item.name}
-                                </a>
-                            </li>
-                        `).join('');
+
+                        const groupedBySubcategory = items.reduce((acc, item) => {
+                            if (!acc[item.subcategory]) {
+                                acc[item.subcategory] = [];
+                            }
+                            acc[item.subcategory].push(item);
+                            return acc;
+                        }, {});
+
+                        const orderedSkillItems = Object.entries(groupedBySubcategory).flatMap(([subcategory, subcategoryItems]) => {
+                            return [
+                                `<li class="skill-subcategory-heading"><span class="skill-subcategory-label">${subcategory}</span></li>`,
+                                ...subcategoryItems.map(item => `
+                                <li>
+                                    <a href="${item.link}" title="Learned in: ${item.project}" style="color: inherit; text-decoration: none; cursor: help;">
+                                        ${item.name}
+                                    </a>
+                                </li>
+                                `)
+                            ];
+                        }).join('');
 
                         box.innerHTML = `
-                            <h3>${subcat}</h3>
-                            <ul style="padding-left: 0; margin: 0;">${listItems}</ul>
+                            <h3>${category}</h3>
+                            <ul>${orderedSkillItems}</ul>
                         `;
                         
                         container.appendChild(box);
                     }
+
+                    const toggle = document.getElementById('skill-subcategory-toggle');
+                    toggle.addEventListener('click', () => {
+                        const isExpanded = container.classList.toggle('show-subcategories');
+                        toggle.textContent = isExpanded ? 'Hide subcategories' : 'Show subcategories';
+                        toggle.setAttribute('aria-expanded', isExpanded);
+                    });
                 })
                 .catch(error => console.error('Error loading skills.json:', error));
         </script>
