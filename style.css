@@ -23,7 +23,40 @@ font-family: 'Aptos', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
     color: var(--text-main);
     line-height: 1.7;
     padding: 3rem 1rem;
-}
+    }
+
+    .site-header {
+        max-width: 900px;
+        margin: 0 auto 2rem;
+        padding: 0.85rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .site-brand {
+        color: var(--text-main);
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .site-nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .site-nav-links a {
+        color: var(--text-muted);
+        font-size: 0.85rem;
+        text-decoration: none;
+    }
+
+    .site-nav-links a:hover {
+        color: var(--accent);
+    }
 
 .container {
     max-width: 900px;
@@ -262,6 +295,42 @@ section {
     background-color: transparent;
     box-shadow: none;
     padding: 1.25rem;
+}
+
+.art-practice-intro {
+    max-width: 720px;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.art-practice-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+}
+
+.art-practice-item {
+    border-top: 3px solid var(--text-main);
+    padding-top: 1rem;
+}
+
+.art-practice-item h3 {
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+}
+
+.art-practice-item p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.art-practice-feature {
+    max-width: 700px;
+    color: var(--text-muted);
+}
+
+.art-practice-feature p + p {
+    margin-top: 1rem;
 }
 
 /* ==========================================================================
@@ -518,6 +587,10 @@ footer .social-links a:hover {
    8. MEDIA QUERIES (RESPONSIVE)
    ========================================================================== */
 @media (max-width: 768px) {
+    .art-practice-grid {
+        grid-template-columns: 1fr;
+    }
+
     .header-container {
         flex-direction: column-reverse;
         text-align: center;
