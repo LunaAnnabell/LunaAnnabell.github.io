@@ -1,0 +1,20 @@
+Title: Social Engagement and Design
+
+Subtitle: An iterative approach to event discovery
+
+Category / Domain Tag: Interaction Design / Human-Computer Interaction (HCI)
+
+
+role: Participatory Design Facilitator, UX/UI Designer, and Usability Evaluator. nteraction Designer, Participatory Design Facilitator, and Co-developer
+Context: 8. semester project at Aalborg University
+Timeframe [Spring 2025]
+
+Pictures used:
+img\extracted_images\Social_E_T_I_D\Main\social_e_t_i_d_main_01.png
+img\extracted_images\Social_E_T_I_D\Figure\social_e_t_i_d_figure_03.png
+img\extracted_images\Social_E_T_I_D\Figure\social_e_t_i_d_figure_04.png
+img\extracted_images\Social_E_T_I_D\Figure\social_e_t_i_d_figure_02.png
+
+Describtion of project:
+
+The final product is a T-shaped prototype Android application built in Android Studio using Java and XML, structured via an open-strict layered architecture. It features dynamic character selection, category filtering, a detailed event timeline, and a functional calendar view. Evaluated through Nielsen's usability heuristics, the project concludes that blending gamified navigation paths (inspired by Duolingo and Candy Crush) with localized event discovery effectively bridges the gap for newcomers trying to integrate into a new city

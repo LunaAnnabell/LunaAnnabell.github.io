@@ -12,7 +12,7 @@
     <nav class="site-header" aria-label="Main navigation">
         <a href="../index.html" class="site-brand">Luna Annabell</a>
         <div class="site-nav-links">
-            <a href="../index.html#projects">Projects</a>
+            <a href="../index.html" aria-current="page">Portfolio</a>
             <a href="../art.html">Art Portfolio</a>
             <a href="../about.html">About</a>
             <a href="../index.html#skills">Skills</a>
@@ -24,91 +24,67 @@
         <!-- Back to front page button -->
         <p style="margin-bottom: 2rem;"><a href="../index.html" class="btn">← Back to front page</a></p>
 
-        <!-- 1. PRESENTATION / OVERVIEW (Header & Quick Facts) -->
+            <!-- Informations -->
         <header style="margin-bottom: 3rem;">
             <div class="header-container">
                 <div class="header-text" style="text-align: left;">
-                    <span class="tag">Development of Interactive Systems / Agile Software Engineering & AI-Supported Automation</span>
+                    <span class="tag">Agile Software Engineering / Agentic AI / Full-Stack Web Development</span>
                     <h1 style="font-size: 2rem; margin-top: 0.5rem; margin-bottom: 0.5rem;">In Case You Need Cleaning</h1>
                     <h2 style="color: var(--accent); font-weight: 500; margin-bottom: 1rem;">An interactive development project exploring AI-supported automation in service booking</h2>
-                    
                     <!-- Quick Facts Bar -->
                     <div style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 1rem; border-radius: 4px; margin-bottom: 1.5rem; font-size: 0.9rem; line-height: 1.5; border-left: 3px solid var(--accent);">
-                        <p style="margin: 0 0 0.3rem 0;"><strong>Role:</strong> Designer</p>
-                        <p style="margin: 0 0 0.3rem 0;"><strong>Context:</strong> 9th-semester project (DAD9-P9) at Aalborg University (AAU) / Supervisor: Ilhan Aslan</p>
-                        <p style="margin: 0;"><strong>Duration:</strong> September 2, 2025 – December 22, 2025 (fall, 2025)</p>
+                        <p style="margin: 0 0 0.3rem 0;"><strong>Role:</strong> UX Designer & Full-stack developer</p>
+                        <p style="margin: 0 0 0.3rem 0;"><strong>Context:</strong> 9th semester project at Aalborg University in collaboration with a hypothetical case partner, Unit Cleaning, to address administrative inefficiencies, scheduling errors, and inconsistent customer reminder workflows
+</p>
+                        <p style="margin: 0;"><strong>Timeframe:</strong> fall 2025</p>
                     </div>
-
+        
+                    <!-- body  & context -->
                     <p class="bio" style="margin: 0; font-size: 0.95rem; color: var(--text-muted);">
-                        <em>Elevator Pitch:</em> This project investigates the potential and limitations of automating manual appointment coordination for a hypothetical cleaning service company called Unit Cleaning. By transitioning from an initial Streamlit-based digitisation prototype to an advanced Flask-backed system driven by Agentic Artificial Intelligence (AAI), the project explores how conversational agents can reduce administrative overhead and streamline user workflows.
-                    </p>
+                        <em>Description:</em> The project investigates the potential and limitations of automating 
+                        manual appointment coordination through Agentic Artificial Intelligence (AAI). Moving past 
+                        a basic first rendition focused purely on Streamlit/MySQL CRUD digitisation, the second
+                         prototype introduces a conversational user interface (CUI) powered by an LLM (OpenAI) 
+                         integrated via a Flask backend. The system evaluates user input, calendar availability 
+                         (Google Calendar API), and local weather data (DMI) to autonomously recommend and schedule 
+                         cleaning appointments.</p>
                 </div>
                 <div class="header-image" style="max-width: 300px; width: 100%;">
                    <div class="image-frame project-detail-view">
-                        <img src="../img/In_case.png" alt="In Case You Need Cleaning Mockup" class="project-img">
+                        <img src="../img\extracted_images\In_Case_U_N_C\Screenshot\in_case_u_n_c_screenshot_05.png" alt="In Case You Need Cleaning project" class="project-img">
                    </div>
                 </div>
             </div>
         </header>
 
-        <!-- 2. PROBLEM & OBJECTIVE -->
-        <section style="margin-bottom: 3rem;">
-            <h2>2. Problem & Objective</h2>
-            <p style="color: var(--text-muted); margin-bottom: 1rem;">
-                <strong>The Challenge:</strong> Unit Cleaning relied heavily on manual processes for managing customer information, scheduling, and sending appointment reminders, leading to inconsistent timing, high rates of missed appointments, administrative bottlenecks, and zero business scalability.
-            </p>
-            <p style="color: var(--text-muted);">
-                <strong>Target Audience & Stakeholders:</strong> Built for private customers (who interact directly with the system for self-service booking) and administrative staff/cleaning employees of Unit Cleaning.
-            </p>
-        </section>
+        
 
-        <!-- 3. METHODS & APPROACH -->
+        <!-- SOLUTION AND CONCLUSION -->
         <section style="margin-bottom: 3rem;">
-            <h2>3. Methods & Approach</h2>
+            <h2>Solution and Conclusion</h2>
             <p style="color: var(--text-muted); margin-bottom: 1rem;">
-                <strong>Development Process:</strong> Iterative Agile Software Engineering combining Scrum (Product Backlog, Sprints, Daily Scrums) and eXtreme Programming (XP) practices like pair programming.
+                <strong>Conclusion:</strong> The project implemented a hybrid UI combining conversational AI flexibility with structured visual widgets (weather, addresses, profiles, and calendars) to minimize user cognitive load. Evaluated through expert-based Heuristic Evaluations using Nielsen's heuristics, the project concluded that while AAI drastically reduces administrative burdens, it introduces challenges regarding user trust, system transparency, and conversational predictability, emphasizing that hybrid interfaces are vital to keep users in control.
             </p>
-            <p style="color: var(--text-muted);">
-                <strong>Analysis & Research:</strong> Utilized FACTOR criteria, Entity Relationship (ER) diagrams, rich pictures, system contexts, mini-world modeling, user stories based on specific personas (Jonas, Anna & Mikkel), use cases, and Heuristic Evaluations based on Jakob Nielsen's usability principles.
-            </p>
-        </section>
 
-        <!-- 4. TECHNICAL & VISUAL FOUNDATION -->
-        <section style="margin-bottom: 3rem;">
-            <h2>4. Technical & Visual Foundation</h2>
-            <p style="color: var(--text-muted); margin-bottom: 1rem;">
-                <strong>Tech Stack:</strong> Python, Flask, MySQL database, HTML/CSS, JavaScript, and OpenAI's tool-calling interface (leveraging GPT models).
-            </p>
-            <p style="color: var(--text-muted);">
-                <strong>Tools & Architecture:</strong> Layered Architecture Pattern (Interface, Backend, External) integrating external APIs such as Google Calendar OAuth 2.0 and the Danish Meteorological Institute (DMI) weather service.
-            </p>
-        </section>
-
-        <!-- 5. SOLUTION & ARTIFACTS -->
-        <section style="margin-bottom: 3rem;">
-            <h2>5. Solution & Artifacts</h2>
-            <p style="color: var(--text-muted); margin-bottom: 1rem;">
-                Hybrid Interface combining conversational AI-agent chatbot window with supporting UI widgets and relational MySQL database schema.
-            </p>
-            <!-- Image placeholder / gallery container -->
-            <div class="image-frame" style="text-align: center; padding: 2rem; color: var(--text-muted);">
-                [ Insert Project Visuals / Screenshots / Code Snippets Here ]
+            <!-- VISUALS & ARTIFACTS -->
+            <div class="solution-visuals">
+                <h3>Visuals & Artifacts</h3>
+            <div class="project-carousel" data-carousel tabindex="0" aria-label="In Case You Need Cleaning visuals">
+                <button type="button" class="carousel-button" data-carousel-previous aria-label="Previous image">&larr;</button>
+                <div class="carousel-viewport">
+                    <img src="../img/extracted_images/In_Case_U_N_C/Figure/in_case_u_n_c_figure_03.jpeg" alt="Project main visual" class="carousel-slide">
+                    <img src="../img/extracted_images/In_Case_U_N_C/Figure/in_case_u_n_c_figure_05.jpeg" alt="Project figure" class="carousel-slide" hidden>
+                    <img src="../img/extracted_images/In_Case_U_N_C/Figure/in_case_u_n_c_figure_06.png" alt="Project figure" class="carousel-slide" hidden>
+                </div>
+                <button type="button" class="carousel-button" data-carousel-next aria-label="Next image">&rarr;</button>
+                <p class="carousel-caption" data-carousel-caption></p>
+                <span class="carousel-status" data-carousel-status aria-live="polite">1 / 3</span>
+            </div>
             </div>
         </section>
 
-        <!-- 6. LEARNING & RESULTS -->
-        <section style="margin-bottom: 3rem;">
-            <h2>6. Results & Key Learnings</h2>
-            <p style="color: var(--text-muted); margin-bottom: 1rem;">
-                <strong>Impact & Feedback:</strong> Case partner feedback highlighted intuitive AI booking features and personalized RAG utilization, while Heuristic Evaluations revealed usability issues concerning AI expectations, user trust, system visibility status, and information overload.
-            </p>
-            <p style="color: var(--text-muted);">
-                <strong>Personal Takeaways:</strong> Concluded that conversational automation requires a hybrid interface to balance AI flexibility with structured visual elements, keeping the user in control and mitigating cognitive load and context loss.
-            </p>
-        </section>
-
         <!-- AUTOMATIC SKILLS SECTION -->
-        <section style="margin-bottom: 3rem;">
+        <section class="project-skills-section" style="margin-bottom: 3rem;">
             <h2>Skills Applied in this Project</h2>
             <div id="project-skills" style="display: flex; flex-wrap: wrap; gap: 0.5rem;"></div>
         </section>
@@ -132,7 +108,7 @@
         </script>
 
         <!-- CONTACT SECTION -->
-        <section id="contact" style="margin-bottom: 3rem;">
+        <section id="contact" class="project-contact-section" style="margin-bottom: 3rem;">
             <h2>Contact</h2>
             <div class="contact-card">
                 <div class="contact-item">
@@ -151,5 +127,6 @@
         </section>
     </div>
 
+    <script src="../carousel.js"></script>
 </body>
 </html>

@@ -2,7 +2,7 @@
    1. VARIABLES & RESET
    ========================================================================== */
 :root {
-    --bg-color: #fbf9f7;       /* Varm, lys papirfarve */
+    --bg-color: #f4f0eb;       /* Varm, lys papirfarve */
     --card-bg: #ffffff;        /* Rent hvid til kort */
     --text-main: #2c2c2c;      /* Blød kulsort til tekst */
     --text-muted: #666666;     /* Dæmpet grå til beskrivelser */
@@ -56,6 +56,20 @@ font-family: 'Aptos', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
 
     .site-nav-links a:hover {
         color: var(--accent);
+    }
+
+    /* Separate page navigation from the in-page Skills and Contact links. */
+    .site-nav-links a[href*="#skills"] {
+        margin-left: 0.5rem;
+        padding-left: 1rem;
+        border-left: 1px solid var(--border-color);
+    }
+
+    .site-nav-links a[aria-current="page"] {
+        color: var(--accent);
+        font-weight: 600;
+        border-bottom: 2px solid var(--accent);
+        padding-bottom: 0.2rem;
     }
 
 .container {
@@ -352,6 +366,70 @@ section {
     border: none;
 }
 
+.project-carousel {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 1rem;
+    background-color: #ffffff;
+    border: 8px solid #171717;
+    padding: 14px;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.16);
+}
+
+.carousel-viewport {
+    min-width: 0;
+    min-height: 320px;
+    display: grid;
+    place-items: center;
+}
+
+.carousel-slide {
+    max-height: 620px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.carousel-button {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid var(--border-color);
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+.carousel-button:hover,
+.carousel-button:focus-visible {
+    background-color: var(--accent);
+    color: #ffffff;
+}
+
+.carousel-status {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    background-color: rgba(23, 23, 23, 0.78);
+    color: #ffffff;
+    padding: 0.3rem 0.55rem;
+    font-size: 0.8rem;
+}
+
+.carousel-caption {
+    grid-column: 1 / -1;
+    margin: 0;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.carousel-slide[hidden] {
+    display: none;
+}
+
 /* A. INDEX PAGE GRID CARDS: Compact thumbnail sizing */
 .project-card .image-frame {
     width: fit-content;
@@ -376,6 +454,55 @@ section {
 .project-detail-view img {
     height: auto;
     object-fit: cover;
+}
+
+.markdown-content {
+    margin-bottom: 3rem;
+}
+
+.markdown-content h1 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.markdown-content h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.markdown-content h2:not(:first-child) {
+    margin-top: 3rem;
+}
+
+.markdown-content p,
+.markdown-content blockquote {
+    color: var(--text-muted);
+}
+
+.markdown-content p {
+    margin-bottom: 1rem;
+}
+
+.markdown-content img {
+    display: block;
+    max-width: 320px;
+    width: 100%;
+    height: auto;
+    margin: 0 0 2rem auto;
+    border: 8px solid #171717;
+    padding: 14px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 14px rgba(0, 0, 0, 0.16);
+}
+
+.markdown-content blockquote {
+    border-left: 3px solid var(--accent);
+    margin: 1.5rem 0;
+    padding-left: 1rem;
+}
+
+.markdown-error {
+    color: #a33a2b;
 }
 
 .tag {
@@ -416,6 +543,33 @@ section {
     display: flex;
     align-items: baseline;
     gap: 1rem;
+}
+
+.project-skills-section {
+    margin-top: 4rem;
+    padding: 2.5rem 0 0;
+    border-top: 3px solid var(--accent);
+}
+
+.project-skills-section h2,
+.project-contact-section h2 {
+    margin-top: 0;
+}
+
+.project-contact-section {
+    margin-top: 5rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.solution-visuals {
+    margin-top: 2rem;
+}
+
+.solution-visuals h3 {
+    margin-bottom: 1rem;
+    color: var(--accent);
+    font-size: 1rem;
 }
 
 .skills-heading h2 {

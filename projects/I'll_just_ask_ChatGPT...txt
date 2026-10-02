@@ -1,0 +1,24 @@
+Title: I'll just ask ChatGPT
+
+Subtitle: Conversational AI as a sense-making tool for physical and mental well-being
+
+Category / Domain Tag: Masters Thesis / Human-Computer Interaction (HCI) 
+
+
+role:Co-author, Qualitative Researcher, and Interviewer
+Context: 10. semester Thesis project at Aalborg University
+Timeframe [spring 2026]
+
+Pictures used: 
+img\extracted_images\I_ll_j_a_ChatGPT\Main\i_ll_j_a_chatgpt_main_01.png
+img\extracted_images\I_ll_j_a_ChatGPT\Figure\i_ll_j_a_chatgpt_figure_04.png
+img\extracted_images\I_ll_j_a_ChatGPT\Figure\i_ll_j_a_chatgpt_figure_01.png
+(More pictures should be added)
+
+Describtion of project:
+
+The study explores the informal role general-purpose chatbots play in health-related information-seeking and well-being management. It addresses the empirical gap surrounding how users formulate concerns, prompt models, and make sense of responses when dealing with unstructured health queries.
+
+Solution and conclusion:
+
+The research methodology comprised 20 semi-structured qualitative interviews featuring a scenario-based chatbot task (evaluating physical symptoms vs. mental well-being scenarios) analyzed using Reflexive Thematic Analysis. The findings generated four core themes: Available and Low-Friction Use, Conversational AI as a Sense-Making Tool, User Agency, and Social Contracts and Privacy. The thesis concludes that chatbots primarily function as low-effort sense-making tools that help users structure vague uncertainties, while simultaneously introducing complex tensions regarding trust, verification, agreeableness, and responsibility

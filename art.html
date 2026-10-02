@@ -3,16 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art Portfolio – Luna Annabell</title>
+    <title>Art Portfolio – Luna Annabell Linné Jensen</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            position: relative;
+            overflow-x: hidden;
+            background-color: #f4f0eb;
+        }
+
+        /* Kunstnerisk papir-tekstur */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: radial-gradient(rgba(0,0,0,0.03) 1px, transparent 1px);
+            background-size: 24px 24px;
+            pointer-events: none;
+            z-index: 999;
+        }
+
+        .art-hero-canvas {
+            position: relative;
+            max-width: 1000px;
+            margin: 2rem auto 6rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            padding: 0 1rem;
+        }
+
+        .art-hero-text h1 {
+            font-size: 3rem;
+            line-height: 1.15;
+            letter-spacing: -1px;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .art-hero-text p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        /* Main collage without tape */
+        .hero-collage-frame {
+            position: relative;
+            background-color: #ffffff;
+            border: 6px solid #1a1a1a;
+            padding: 14px;
+            box-shadow: 4px 12px 30px rgba(0,0,0,0.15);
+            transform: rotate(-2.5deg);
+            transition: transform 0.4s ease;
+        }
+
+        .hero-collage-frame:hover {
+            transform: rotate(0deg) scale(1.01);
+        }
+
+        .hero-collage-frame img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .art-exhibition-section {
+            max-width: 1000px;
+            margin: 0 auto 9rem;
+            padding: 0 1rem;
+        }
+
+        .exhibition-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .exhibition-row.reverse {
+            direction: rtl;
+        }
+
+        .exhibition-row.reverse > * {
+            direction: ltr;
+        }
+
+        .exhibition-text h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            border: none;
+            padding: 0;
+            letter-spacing: -0.5px;
+        }
+
+        .exhibition-text p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+
+        /* Spredt galleri-cluster med mere plads til diagonalt flow */
+        .scattered-cluster {
+            position: relative;
+            height: 580px;
+            width: 100%;
+        }
+
+        .scattered-frame {
+            position: absolute;
+            background-color: #ffffff;
+            border: 5px solid #1a1a1a;
+            padding: 10px;
+            transform-origin: center center;
+            box-shadow: 5px 15px 30px rgba(0,0,0,0.18);
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+        }
+
+        .scattered-frame:hover {
+            width: fit-content !important;
+            height: auto;
+            transform: rotate(0deg) !important;
+            z-index: 100 !important;
+            box-shadow: 8px 25px 45px rgba(0,0,0,0.25);
+        }
+
+        .scattered-frame img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        .scattered-frame:hover img {
+            width: auto;
+            height: auto;
+            max-width: min(70vw, 320px);
+            max-height: min(70vh, 320px);
+            object-fit: contain;
+        }
+
+        /* SCROLL REVEAL ANIMATIONS */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .scroll-reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .scattered-cluster .img-1 { transition-delay: 0.1s; }
+        .scattered-cluster .img-2 { transition-delay: 0.2s; }
+        .scattered-cluster .img-3 { transition-delay: 0.3s; }
+        .scattered-cluster .img-4 { transition-delay: 0.4s; }
+        .scattered-cluster .img-5 { transition-delay: 0.5s; }
+        .scattered-cluster .img-6 { transition-delay: 0.6s; }
+        .scattered-cluster .img-7 { transition-delay: 0.7s; }
+
+        /* Group 1: Portraits */
+        .cluster-1 .img-1 { width: 44%; top: 0px; left: 5px; transform: rotate(-8deg); }
+        .cluster-1 .img-2 { width: 40%; top: 35px; right: 10px; transform: rotate(7deg); }
+        .cluster-1 .img-3 { width: 42%; top: 160px; left: 35px; transform: rotate(4deg); }
+        .cluster-1 .img-4 { width: 39%; top: 195px; right: 5px; transform: rotate(-6deg); }
+        .cluster-1 .img-5 { width: 41%; bottom: 10px; left: 0px; transform: rotate(-3deg); }
+        .cluster-1 .img-6 { width: 37%; bottom: 0px; right: 40px; transform: rotate(9deg); }
+        .cluster-1 .img-7 { width: 40%; top: 100px; left: 28%; transform: rotate(-2deg); }
+
+        /* Group 2: Sculptures, spread out in an open diagonal pattern */
+        .cluster-2 { height: 560px; }
+        .cluster-2 .img-1 { width: 42%; top: 0px; left: 0px; transform: rotate(5deg); }
+        .cluster-2 .img-2 { width: 39%; top: 120px; right: 10px; transform: rotate(-7deg); }
+        .cluster-2 .img-3 { width: 40%; bottom: 40px; left: 45px; transform: rotate(-4deg); }
+        .cluster-2 .img-4 { width: 41%; bottom: 0px; right: 30px; transform: rotate(6deg); }
+
+        /* Group 3: Mixed media and installations, arranged in a staggered diagonal cascade */
+        .cluster-3 { height: 560px; }
+        .cluster-3 .img-1 { width: 40%; top: 0px; left: 10px; transform: rotate(-5deg); }
+        .cluster-3 .img-2 { width: 42%; top: 130px; right: 5px; transform: rotate(4deg); }
+        .cluster-3 .img-3 { width: 39%; bottom: 50px; left: 40px; transform: rotate(7deg); }
+        .cluster-3 .img-4 { width: 41%; bottom: 0px; right: 25px; transform: rotate(-3deg); }
+
+        @media (max-width: 768px) {
+            .art-hero-canvas,
+            .exhibition-row,
+            .exhibition-row.reverse {
+                grid-template-columns: 1fr;
+                direction: ltr;
+                gap: 3rem;
+            }
+            .scattered-cluster {
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+            .scattered-frame {
+                position: relative !important;
+                width: 83% !important;
+                margin: 0 auto !important;
+                top: auto !important;
+                left: auto !important;
+                right: auto !important;
+                bottom: auto !important;
+                transform: rotate(0deg) !important;
+            }
+
+            .scattered-frame:hover {
+                width: fit-content !important;
+                height: auto;
+                max-width: 85vw;
+            }
+
+            .scattered-frame:hover img {
+                max-width: 85vw;
+                max-height: 70vh;
+            }
+
+        }
+    </style>
 </head>
 <body>
 
     <nav class="site-header" aria-label="Main navigation">
-        <a href="index.html" class="site-brand">Luna Annabell</a>
+        <a href="index.html" class="site-brand">Luna Annabell Linné Jensen</a>
         <div class="site-nav-links">
-            <a href="index.html#projects">Projects</a>
+            <a href="index.html">Portfolio</a>
             <a href="art.html" aria-current="page">Art Portfolio</a>
             <a href="about.html">About</a>
             <a href="index.html#skills">Skills</a>
@@ -20,57 +242,159 @@
         </div>
     </nav>
 
-    <main class="container art-practice-page">
-        <header class="about-intro">
-            <div class="hero-badge">Personal Art Practice</div>
-            <h1>Building, drawing, and bringing different worlds together.</h1>
-            <p class="hero-bio">
-                In my personal practice, I spend time exploring details in everything from physical sculpture to drawing. This work is where my creative and technical ways of thinking meet most naturally.
-            </p>
-        </header>
-
-        <section>
-            <h2>Careful Making</h2>
-            <div class="art-practice-feature">
-                <div>
-                    <p>
-                        I draw hyperrealistic portraits because the process gives me a sense of calm and focus. Working with texture and the way light moves across an eye has taught me to analyse structures and patterns while keeping sight of the whole image.
-                    </p>
-                    <p>
-                        It is a patient process, and the satisfaction comes from seeing a detailed result grow through sustained attention.
-                    </p>
-                </div>
+    <main class="container art-practice-page" style="max-width: 1100px;">
+        
+        <!-- Hero section -->
+        <section class="art-hero-canvas scroll-reveal">
+            <div class="art-hero-text">
+                <div class="hero-badge" style="margin-bottom: 1rem;">Personal Art Practice</div>
+                <h1>Building, creating, and blending worlds together.</h1>
+                <p>
+                    I have always been drawn to building and creating. This portfolio offers a glimpse into my personal projects and the working process that shapes how I think and solve problems.
+                </p>
+            </div>
+            <div class="hero-collage-frame">
+                <img src="Art/Portfolio/Finished/Main/finished_main_01.png" alt="Luna Linné Art Collage">
             </div>
         </section>
 
-        <section>
-            <h2>The Supporting Structure</h2>
-            <div class="art-practice-feature">
-                <div>
+        <!-- Section 1: Portraits -->
+        <div class="art-exhibition-section">
+            <div class="exhibition-row">
+                <div class="exhibition-text scroll-reveal">
+                    <h2>Taking the time to do it well</h2>
                     <p>
-                        When I build sculptures, I work with form, space, and aesthetics. Although the focus may be on the outside, the internal structure is what makes the finished expression possible.
+                        I draw hyperrealistic portraits because immersing myself in the process brings me a great sense of calm. By working with textures and the way light moves across an eye, I have learned how much care and attention can transform a result.
                     </p>
                     <p>
-                        From the first framework to the final surface, each step and material choice contributes to an object that can function in a space and carry itself physically and conceptually.
+                        It is a patient process that teaches me to analyse structures and patterns so a piece becomes precise without losing sight of the whole. The satisfaction of focusing deeply and watching a result take shape is a strong driving force for me.
                     </p>
                 </div>
+                <div class="scattered-cluster cluster-1">
+                    <div class="scattered-frame img-1 scroll-reveal">
+                        <img src="Art/Portfolio/Finished/Hyperrealistic/finished_hyperrealistic_01.jpg" alt="Hyperrealistic portrait 1">
+                    </div>
+                    <div class="scattered-frame img-2 scroll-reveal">
+                        <img src="Art/Portfolio/Finished/Hyperrealistic/finished_hyperrealistic_02.jpg" alt="Hyperrealistic portrait 2">
+                    </div>
+                    <div class="scattered-frame img-3 scroll-reveal">
+                        <img src="Art/Portfolio/Finished/Hyperrealistic/finished_hyperrealistic_03.jpg" alt="Hyperrealistic portrait 3">
+                    </div>
+                    <div class="scattered-frame img-4 scroll-reveal">
+                        <img src="Art/Portfolio/Finished/Hyperrealistic/finished_hyperrealistic_04.jpg" alt="Hyperrealistic portrait 4">
+                    </div>
+                    <div class="scattered-frame img-5 scroll-reveal">
+                        <img src="Art/Portfolio/Finished/Hyperrealistic/finished_hyperrealistic_05.jpg" alt="Hyperrealistic portrait 5">
+                    </div>
+                    <div class="scattered-frame img-6 scroll-reveal">
+                        <img src="Art/Portfolio/Finished/Hyperrealistic/finished_hyperrealistic_06.jpg" alt="Hyperrealistic portrait 6">
+                    </div>
+                    <div class="scattered-frame img-7 scroll-reveal">
+                        <img src="Art/Portfolio/Finished/Hyperrealistic/finished_hyperrealistic_07.jpg" alt="Hyperrealistic portrait 7">
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
 
-        <section>
-            <h2>Two Worlds Becoming One</h2>
-            <div class="art-practice-feature">
-                <div>
+        <!-- Section 2: Sculptures -->
+        <div class="art-exhibition-section">
+            <div class="exhibition-row reverse">
+                <div class="exhibition-text scroll-reveal">
+                    <h2>The structure that carries the expression</h2>
                     <p>
-                        I am fascinated by how different materials and fields can be mixed and brought together. Light, sound, movement, and physical elements can build a bridge between otherwise separate worlds.
+                        When I build sculptures, I focus on form, space, and aesthetics. Although the focus is on the exterior, the internal supporting structure is essential to the final expression.
                     </p>
                     <p>
-                        The technology is not the goal by itself. What matters is how the combined result creates an experience that can give something to its audience.
+                        If the foundation is not built properly from the beginning, the whole piece can collapse. That is why the entire process matters to me, from the first structure to the final surface. Every step and material choice contributes to a result that works in a space and can support itself.
                     </p>
                 </div>
+                <div class="scattered-cluster cluster-2">
+                    <div class="scattered-frame img-1 scroll-reveal">
+                        <img src="Art/Portfolio/Finished/Sculpture/finished_sculpture_01.jpeg" alt="Sculpture 1">
+                    </div>
+                    <div class="scattered-frame img-2 scroll-reveal">
+                        <img src="Art/Portfolio/Finished/Sculpture/finished_sculpture_02.jpeg" alt="Sculpture 2">
+                    </div>
+                    <div class="scattered-frame img-3 scroll-reveal">
+                        <img src="Art/Portfolio/Finished/Sculpture/finished_sculpture_03.jpeg" alt="Sculpture 3">
+                    </div>
+                    <div class="scattered-frame img-4 scroll-reveal">
+                        <img src="Art/Portfolio/Finished/Sculpture/finished_sculpture_04.jpeg" alt="Sculpture 4">
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
+
+        <!-- Section 3: Mixed media and installations -->
+        <div class="art-exhibition-section">
+            <div class="exhibition-row">
+                <div class="exhibition-text scroll-reveal">
+                    <h2>Two worlds coming together</h2>
+                    <p>
+                        I am fascinated by how different materials and disciplines can be combined. For me, it is about building bridges between different worlds to create a unique experience.
+                    </p>
+                    <p>
+                        Whether through light, sound, movement, or other elements, the goal is always to create something that gives value to others. The technology itself is not the most important part; what matters is that the final result speaks to its audience.
+                    </p>
+                </div>
+                <div class="scattered-cluster cluster-3">
+                    <div class="scattered-frame img-1 scroll-reveal">
+                        <img src="Art/Portfolio/Finished/Multi/finished_multi_01.jpeg" alt="Mixed-media installation 1">
+                    </div>
+                    <div class="scattered-frame img-2 scroll-reveal">
+                        <img src="Art/Portfolio/Finished/Multi/finished_multi_02.jpeg" alt="Mixed-media installation 2">
+                    </div>
+                    <div class="scattered-frame img-3 scroll-reveal">
+                        <img src="Art/Portfolio/Finished/Multi/finished_multi_03.jpeg" alt="Mixed-media installation 3">
+                    </div>
+                    <div class="scattered-frame img-4 scroll-reveal">
+                        <img src="Art/Portfolio/Finished/Multi/finished_multi_04.jpeg" alt="Mixed-media installation 4">
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
+    <!-- JavaScript til scroll-effekter -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.scroll-reveal').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+     <!-- CONTACT SECTION -->
+        <section id="contact" style="margin-bottom: 3rem;">
+            <h2>Contact</h2>
+            <div class="contact-card">
+                <div class="contact-item">
+                    <strong>LinkedIn</strong>
+                    <span><a href="https://www.linkedin.com/in/luna-annabell-linn%C3%A9-jensen" target="_blank">LinkedIn Profile</a></span>
+                </div>
+                <div class="contact-item">
+                    <strong>GitHub</strong>
+                    <span><a href="https://github.com/LunaAnnabell" target="_blank">GitHub Profile</a></span>
+                </div>
+                <div class="contact-item">
+                    <strong>Email</strong>
+                    <span><a href="mailto:Lunaannabell@outlook.dk">lunaannabell@outlook.dk</a></span>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>

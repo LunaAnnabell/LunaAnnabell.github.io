@@ -342,5 +342,138 @@
     "subcategory": "data visualization",
     "project": "Balancing_Nutrition_and_Sustainability",
     "link": "projects/Balancing_Nutrition_and_Sustainability.html"
+  },
+  {
+    "name": "Participatory Design & User Involvement",
+    "category": "UI/UX Design & interaction Design",
+    "subcategory": "Design process and frameworks",
+    "project": "Social_Engagement_Through_Interactive_Design",
+    "link": "projects/Social_Engagement_Through_Interactive_Design.html"
+  },
+  {
+    "name": "UX/UI Design & Usability",
+    "category": "UI/UX Design & interaction Design",
+    "subcategory": "Interface design",
+    "project": "Social_Engagement_Through_Interactive_Design",
+    "link": "projects/Social_Engagement_Through_Interactive_Design.html"
+  },
+  {
+    "name": "Empathetic & Concept Design",
+    "category": "UI/UX Design & interaction Design",
+    "subcategory": "Design process and frameworks",
+    "project": "Beneath_The_Weight",
+    "link": "projects/Beneath_The_Weight.html"
+  },
+  {
+    "name": "Empathetic & Concept Design",
+    "category": "UI/UX Design & interaction Design",
+    "subcategory": "Design process and frameworks",
+    "project": "Symbiotic_Wellbeing",
+    "link": "projects/Symbiotic_Wellbeing.html"
+  },
+  {
+    "name": "User Journey Mapping",
+    "category": "UI/UX Design & interaction Design",
+    "subcategory": "Design process and frameworks",
+    "project": "Social_Engagement_Through_Interactive_Design",
+    "link": "projects/Social_Engagement_Through_Interactive_Design.html"
+  },
+  {
+    "name": "User Journey Mapping",
+    "category": "UI/UX Design & interaction Design",
+    "subcategory": "Design process and frameworks",
+    "project": "Beneath_The_Weight",
+    "link": "projects/Beneath_The_Weight.html"
+  },
+  {
+    "name": "Qualitative Research & Semi-Structured Interviews",
+    "category": "Research & Analysis",
+    "subcategory": "AI and qualitative research",
+    "project": "I'll_just_ask_ChatGPT",
+    "link": "projects/I'll_just_ask_ChatGPT....html"
+  },
+  {
+    "name": "Human-AI Interaction Studies",
+    "category": "Research & Analysis",
+    "subcategory": "AI and qualitative research",
+    "project": "I'll_just_ask_ChatGPT",
+    "link": "projects/I'll_just_ask_ChatGPT....html"
+  },
+  {
+    "name": "Empirical Data Synthesis",
+    "category": "Research & Analysis",
+    "subcategory": "AI and qualitative research",
+    "project": "I'll_just_ask_ChatGPT",
+    "link": "projects/I'll_just_ask_ChatGPT....html"
+  },
+  {
+    "name": "Empirical Data Synthesis",
+    "category": "Research & Analysis",
+    "subcategory": "AI and qualitative research",
+    "project": "Social_Engagement_Through_Interactive_Design",
+    "link": "projects/Social_Engagement_Through_Interactive_Design.html"
+  },
+  {
+    "name": "Python Scripting & Automation",
+    "category": "Programming & Software Development",
+    "subcategory": "automation and infrastructure",
+    "project": "Portfolio Infrastructure",
+    "link": "index.html"
+  },
+  {
+    "name": "LaTeX / Overleaf Development",
+    "category": "Programming & Software Development",
+    "subcategory": "technical documentation",
+    "project": "I'll_just_ask_ChatGPT",
+    "link": "projects/I'll_just_ask_ChatGPT....html"
+  },
+  {
+    "name": "LaTeX / Overleaf Development",
+    "category": "Programming & Software Development",
+    "subcategory": "technical documentation",
+    "project": "Social_Engagement_Through_Interactive_Design",
+    "link": "projects/Social_Engagement_Through_Interactive_Design.html"
+  },
+  {
+    "name": "LaTeX / Overleaf Development",
+    "category": "Programming & Software Development",
+    "subcategory": "technical documentation",
+    "project": "Beneath_The_Weight",
+    "link": "projects/Beneath_The_Weight.html"
+  },
+  {
+    "name": "Vector Graphics & Figure Rendering",
+    "category": "Creative & Multimedia Skills",
+    "subcategory": "visual documentation",
+    "project": "Portfolio Infrastructure",
+    "link": "index.html"
+  },
+  {
+    "name": "Visual Asset Organization",
+    "category": "Creative & Multimedia Skills",
+    "subcategory": "visual documentation",
+    "project": "Portfolio Infrastructure",
+    "link": "index.html"
+  },
+  {
+    "name": "Systems & Sustainable Design",
+    "category": "Other",
+    "subcategory": "sustainability and systems thinking",
+    "project": "Balancing_Nutrition_and_Sustainability",
+    "link": "projects/Balancing_Nutrition_and_Sustainability.html"
+  },
+  {
+    "name": "Behavioral Analysis",
+    "category": "Research & Analysis",
+    "subcategory": "human behavior and well-being",
+    "project": "Balancing_Nutrition_and_Sustainability",
+    "link": "projects/Balancing_Nutrition_and_Sustainability.html"
+  },
+  {
+    "name": "Behavioral Analysis",
+    "category": "Research & Analysis",
+    "subcategory": "human behavior and well-being",
+    "project": "I'll_just_ask_ChatGPT",
+    "link": "projects/I'll_just_ask_ChatGPT....html"
   }
 ]

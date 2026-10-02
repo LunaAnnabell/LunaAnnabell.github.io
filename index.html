@@ -11,10 +11,87 @@
 </head>
 <body>
 
+    <style>
+        body {
+            position: relative;
+            overflow-x: hidden;
+            background-color: #f7f4ef;
+        }
+
+        /* Hero sektion sat op som to kolonner med plads til fuglen */
+        .hero-section {
+            position: relative;
+            overflow: hidden;
+            padding: 4rem 2rem;
+            border-radius: 12px;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Fugle-container i højre side */
+        .hero-bird-container {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-bird {
+            width: 100%;
+            max-width: 340px;
+            height: auto;
+            filter: drop-shadow(0 15px 25px rgba(0,0,0,0.12));
+            /* Indflyvning fra venstre mod højre, efterfulgt af svæv */
+            animation: flyFromLeft 2s cubic-bezier(0.16, 1, 0.3, 1) forwards, floatBird 6s ease-in-out 2s infinite;
+        }
+
+        @keyframes flyFromLeft {
+            0% {
+                transform: translateX(-400px) translateY(-50px) scale(0.3) rotate(-25deg);
+                opacity: 0;
+            }
+            60% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(0px) translateY(0px) scale(1) rotate(0deg);
+                opacity: 1;
+            }
+        }
+
+        @keyframes floatBird {
+            0%, 100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-12px) rotate(2deg);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                grid-template-columns: 1fr;
+            }
+            .hero-bird-container {
+                margin-top: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
     <nav class="site-header" aria-label="Main navigation">
-        <a href="index.html" class="site-brand">Luna Annabell</a>
+        <a href="index.html" class="site-brand">Luna Annabell Linné Jensen</a>
         <div class="site-nav-links">
-            <a href="#projects">Projects</a>
+            <a href="index.html" aria-current="page">Portfolio</a>
             <a href="art.html">Art Portfolio</a>
             <a href="about.html">About</a>
             <a href="#skills">Skills</a>
@@ -26,33 +103,39 @@
         
         <!-- HERO SECTION / ABOUT ME -->
         <header class="hero-section">
-            <div class="hero-badge">Portfolio</div>
-            <h1 class="hero-title">Luna Annabell Linné Jensen</h1>
-            <p class="hero-subtitle">MSc in Digitalisation and Application Development • BA in Art and Technology</p>
-            
-            <p class="hero-bio">
-                I move in the crossroads between strong technical development, system understanding, and aesthetic interactive design. Translating code and digital data into intuitive UX-design and robust applications.
-            </p>
+            <div class="hero-content">
+                <h1 class="hero-title">Luna Annabell Linné Jensen</h1>
+                <p class="hero-subtitle">MSc in Digitalisation and Application Development • BA in Art and Technology</p>
+                
+                <p class="hero-bio">
+                    I move in the crossroads between strong technical development, system understanding, and aesthetic interactive design. Translating code and digital data into intuitive UX-design and robust applications.
+                </p>
 
-            <!-- Knapper med navigation til specifikke sektioner -->
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-accent">View Projects</a>
-                <a href="#contact" class="btn">Get in Touch</a>
+                <!-- Knapper med navigation til specifikke sektioner -->
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-accent">View Projects</a>
+                    <a href="#contact" class="btn">Get in Touch</a>
+                </div>
+
+                <!-- Info Pills -->
+                <div class="info-pills">
+                    <span class="pill">Aalborg, Denmark</span>
+                    <span class="pill">Graduated June 2026</span>
+                    <span class="pill">Open to full-time roles</span>
+                </div>
+
+                <!-- CV Download knap / link hvis ønsket -->
+                <div style="margin-top: 1rem;">
+                    <a href="Combine - CV.pdf" class="btn" download>Download CV (PDF)</a>
+                </div>
             </div>
 
-            <!-- Info Pills -->
-            <div class="info-pills">
-                <span class="pill">Aalborg, Denmark</span>
-                <span class="pill">Graduated June 2026</span>
-                <span class="pill">Open to full-time roles</span>
-            </div>
-
-            <!-- CV Download knap / link hvis ønsket -->
-            <div style="margin-top: 1rem;">
-                <a href="Combine - CV.pdf" class="btn" download>Download CV (PDF)</a>
+            <!-- Visuelt element: Papirfuglen der flyver ind fra venstre -->
+            <div class="hero-bird-container">
+                <img src="Art/Portfolio/Finished/bird.png" alt="Paper Art Bird" class="hero-bird">
             </div>
         </header>
-
+</html>
         <!-- PROJECTS -->
         <section id="projects">
             <h2>Featured Projects</h2>
@@ -150,7 +233,7 @@
         </section>
 
         <!-- SKILLS SECTION (Dynamically generated from skills.json) -->
-        <section id="skills">
+        <section id="skills" class="project-skills-section">
             <div class="skills-heading">
                 <h2>Technical & Professional Skills</h2>
                 <button type="button" id="skill-subcategory-toggle" class="skill-subcategory-toggle" aria-expanded="false">Show subcategories</button>
@@ -237,7 +320,7 @@
         </section>
 
         <!-- CONTACT SECTION -->
-        <section id="contact" style="margin-bottom: 3rem;">
+        <section id="contact" class="project-contact-section" style="margin-bottom: 3rem;">
             <h2>Contact</h2>
             <div class="contact-card">
                 <div class="contact-item">
