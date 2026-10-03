@@ -8,9 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Stylesheet connection -->
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
     <style>
         body {
             position: relative;
@@ -18,70 +15,140 @@
             background-color: #f7f4ef;
         }
 
-        /* Hero sektion sat op som to kolonner med plads til fuglen */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background-image: radial-gradient(rgba(0,0,0,0.025) 1px, transparent 1px);
+            background-size: 24px 24px;
+            pointer-events: none;
+            z-index: 999;
+        }
+
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .scroll-reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* NY HERO SEKTION: CLEAN SPLIT LAYOUT */
         .hero-section {
             position: relative;
-            overflow: hidden;
-            padding: 4rem 2rem;
-            border-radius: 12px;
+            padding: 6rem 2rem 5rem 2rem;
+            max-width: 1100px;
+            width: 100%;
+            box-sizing: border-box;
+            margin: 0 auto;
             display: grid;
-            grid-template-columns: 1.2fr 0.8fr;
-            gap: 2rem;
+            grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.9fr);
+            gap: clamp(2rem, 5vw, 4rem);
             align-items: center;
         }
 
         .hero-content {
-            position: relative;
-            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            min-width: 0;
         }
 
-        /* Fugle-container i højre side */
-        .hero-bird-container {
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -1.5px;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+
+        .hero-subtitle {
+            font-size: 1.05rem;
+            color: #3b5249;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .hero-bio {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            color: #4a4a4a;
+            margin-bottom: 2rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-pills {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+
+        .pill {
+            background: #ffffff;
+            border: 1px solid rgba(0,0,0,0.08);
+            padding: 0.35rem 0.85rem;
+            border-radius: 50px;
+            font-size: 0.85rem;
+            color: #555555;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        /* ART PORTFOLIO IMAGE */
+        .hero-art-display {
             position: relative;
-            z-index: 1;
+            width: 100%;
+            min-height: 340px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        .hero-bird {
+        .hero-collage-frame {
+            position: relative;
+            width: min(100%, 620px);
+            background-color: #ffffff;
+            border: 6px solid #1a1a1a;
+            padding: 14px;
+            box-shadow: 4px 12px 30px rgba(0, 0, 0, 0.15);
+            transform: rotate(-2.5deg);
+            transition: transform 0.4s ease;
+        }
+
+        .hero-collage-frame:hover {
+            transform: rotate(0deg) scale(1.01);
+        }
+
+        .hero-collage-frame img {
             width: 100%;
-            max-width: 340px;
             height: auto;
-            filter: drop-shadow(0 15px 25px rgba(0,0,0,0.12));
-            /* Indflyvning fra venstre mod højre, efterfulgt af svæv */
-            animation: flyFromLeft 2s cubic-bezier(0.16, 1, 0.3, 1) forwards, floatBird 6s ease-in-out 2s infinite;
+            display: block;
         }
 
-        @keyframes flyFromLeft {
-            0% {
-                transform: translateX(-400px) translateY(-50px) scale(0.3) rotate(-25deg);
-                opacity: 0;
-            }
-            60% {
-                opacity: 1;
-            }
-            100% {
-                transform: translateX(0px) translateY(0px) scale(1) rotate(0deg);
-                opacity: 1;
-            }
-        }
-
-        @keyframes floatBird {
-            0%, 100% {
-                transform: translateY(0px) rotate(0deg);
-            }
-            50% {
-                transform: translateY(-12px) rotate(2deg);
-            }
-        }
-
-        @media (max-width: 768px) {
+        @media (max-width: 850px) {
             .hero-section {
                 grid-template-columns: 1fr;
+                text-align: center;
+                gap: 2rem;
             }
-            .hero-bird-container {
-                margin-top: 2rem;
+            .hero-content {
+                align-items: center;
+                text-align: center;
+            }
+            .hero-art-display {
+                min-height: 0;
             }
         }
     </style>
@@ -101,8 +168,9 @@
 
     <div class="container">
         
-        <!-- HERO SECTION / ABOUT ME -->
-        <header class="hero-section">
+        <!-- NY HELT NY HERO SEKTION -->
+        <header class="hero-section scroll-reveal">
+            
             <div class="hero-content">
                 <h1 class="hero-title">Luna Annabell Linné Jensen</h1>
                 <p class="hero-subtitle">MSc in Digitalisation and Application Development • BA in Art and Technology</p>
@@ -111,31 +179,30 @@
                     I move in the crossroads between strong technical development, system understanding, and aesthetic interactive design. Translating code and digital data into intuitive UX-design and robust applications.
                 </p>
 
-                <!-- Knapper med navigation til specifikke sektioner -->
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-accent">View Projects</a>
                     <a href="#contact" class="btn">Get in Touch</a>
                 </div>
 
-                <!-- Info Pills -->
                 <div class="info-pills">
                     <span class="pill">Aalborg, Denmark</span>
                     <span class="pill">Graduated June 2026</span>
                     <span class="pill">Open to full-time roles</span>
                 </div>
 
-                <!-- CV Download knap / link hvis ønsket -->
-                <div style="margin-top: 1rem;">
+                <div>
                     <a href="Combine - CV.pdf" class="btn" download>Download CV (PDF)</a>
                 </div>
             </div>
 
-            <!-- Visuelt element: Papirfuglen der flyver ind fra venstre -->
-            <div class="hero-bird-container">
-                <img src="Art/Portfolio/Finished/bird.png" alt="Paper Art Bird" class="hero-bird">
+            <div class="hero-art-display">
+                <div class="hero-collage-frame">
+                    <img src="Art/Portfolio/Finished/Main/finished_main_01.png" alt="Artwork from Luna Annabell's art portfolio">
+                </div>
             </div>
+
         </header>
-</html>
+
         <!-- PROJECTS -->
         <section id="projects">
             <h2>Featured Projects</h2>
@@ -232,7 +299,7 @@
             <a href="art.html" class="btn">Enter Art Portfolio</a>
         </section>
 
-        <!-- SKILLS SECTION (Dynamically generated from skills.json) -->
+        <!-- SKILLS SECTION -->
         <section id="skills" class="project-skills-section">
             <div class="skills-heading">
                 <h2>Technical & Professional Skills</h2>
@@ -250,7 +317,6 @@
                 .then(skills => {
                     const container = document.getElementById('skills-grid-container');
                     
-                    // Group skills by broad category
                     const grouped = skills.reduce((acc, skill) => {
                         if (!acc[skill.category]) {
                             acc[skill.category] = [];
@@ -259,7 +325,6 @@
                         return acc;
                     }, {});
 
-                    // Build one category box with smaller subcategory groups inside it
                     for (const [category, items] of Object.entries(grouped)) {
                         const box = document.createElement('div');
                         box.className = 'skill-box';
@@ -342,5 +407,19 @@
 
     </div>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Scroll reveal
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+        });
+    </script>
 </body>
 </html>
