@@ -80,26 +80,48 @@
         <!-- AUTOMATIC SKILLS SECTION -->
         <section class="project-skills-section" style="margin-bottom: 3rem;">
             <h2>Skills Applied in this Project</h2>
-            <div id="project-skills" style="display: flex; flex-wrap: wrap; gap: 0.5rem;"></div>
+            <div id="project-skills" data-project-name="Beneath_The_Weight" style="display: flex; flex-wrap: wrap; gap: 0.5rem;"></div>
         </section>
 
-        <script>
-            const currentProjectName = "Beneath_The_Weight"; 
 
-            fetch('../skills.json') 
-                .then(response => response.json())
-                .then(skills => {
-                    const container = document.getElementById('project-skills');
-                    const filteredSkills = skills.filter(s => s.project === currentProjectName);
-                    filteredSkills.forEach(skill => {
-                        const span = document.createElement('span');
-                        span.className = 'tag';
-                        span.textContent = skill.name;
-                        container.appendChild(span);
-                    });
-                })
-                .catch(error => console.error('Error loading skills for project:', error));
-        </script>
+        <section style="margin-bottom: 3rem;">
+            <h2>Exhibition History</h2>
+                <strong>Exhibition:</strong> Beneath The Weight er en interaktiv installation udviklet i 2024 på Aalborg Universitet 
+                som bachelorprojekt af Matilde og Luna, sponsoreret af Nordværk og Kunst og Teknologi (AAU). Projektet undersøger den
+                fysiske og emotionelle oplevelse af at blive overvældet af klimakrisens konstante informationsstrøm.
+
+                Installationen består af en knælende, menneskelignende skulptur bygget i 1:1 skala, formet af genbrugsmaterialer som 
+                polystyren, gamle kabler og lignende. Publikum bevæger sig rundt om skulpturen og møder gennem lyd en strøm af 
+                information om klimakrisen, både negativ og positiv. Efterhånden som den negative information ophobes, bliver 
+                lydbilledet mere intenst, mens skulpturen gradvist synker længere ned, som om den bliver tungere af den voksende 
+                informationsmængde. Når informationsstrømmen falder, rejser skulpturen sig igen, idet der skabes et pusterum. 
+                Bevægelsen bliver dermed en fysisk visualisering af, hvordan klimakrisens konstante informationsstrøm kan føles som en
+                vægt, man bærer på.
+              
+                
+                 <p>
+                <strong>Aalborg Universitet CREATE, Forår 2024</strong>
+                Til første udstilling af installationen fik vi for alvor syn for publikums reaktion. Vi så et utrolig stærkt 
+                førstehåndsindtryk, hvor værkets tematik øjeblikkeligt blev genkendelig for beskueren, både tankemæssigt og kropsligt. 
+                Flere beskrev det som ubehageligt at overvære, hvor menneskelig skulpturen føltes, når den sank sammen under vægten af 
+                information. Værkets evige gentagelse forstærkede følelsen af afmagt og spejlede oplevelsen af klimakrisen som et
+                 problem, der føles uendeligt.
+                </p>
+                <strong>Kulturmødet Mors, August 2024</strong>
+                Ved Kulturmødet fik vi mulighed for at gå dybere ind i samfundsdebatten og den virkelighed, som mange oplever. Vi
+                 erfarede, hvordan skulpturen blev et håndgribeligt udgangspunkt for at diskutere den kollektive overvældelse, ikke
+                  bare som en individuel følelse af afmagt, men som en reel samfundsmæssig udfordring i forhold til, hvordan vi 
+                  overhovedet kan rumme og navigere i den konstante strøm af kriseinformation oven i vores hverdag.
+                 </p>
+                <strong>Bæredygtighedsfestivalen, Aalborg, Oktober 2024</strong>
+                I forbindelse med Aalborg2024: European Conference on Sustainable Cities and Towns blev værket udstillet i Kildeparken. 
+                Her blev Beneath The Weight vist sammen med Prayer Mat af Sandro Masai, skabt i samarbejde med Ghana Venskab og 
+                YEFL-Ghana. Sammen satte værkerne fokus på vores materielle forbrug og den fortælling, vi ofte møder: at vi som 
+                individer forventes at redde planeten gennem små hverdagshandlinger. Med konferencen som base fungerede værket som et
+                 opråb om, at ansvaret for en global krise ikke kan placeres udelukkende hos den enkelte. Individet tynges af presset,
+                  og byrden må i stedet løftes i flok gennem stærke fællesskaber, på tværs af landegrænser og med politisk handlekraft.
+                </p>
+        </section>
 
         <!-- CONTACT SECTION -->
         <section id="contact" class="project-contact-section" style="margin-bottom: 3rem;">
@@ -122,5 +144,6 @@
     </div>
 
     <script src="../carousel.js"></script>
+    <script src="../project.js"></script>
 </body>
 </html>

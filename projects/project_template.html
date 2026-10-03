@@ -71,33 +71,9 @@
         <!-- AUTOMATIC SKILLS SECTION (Dynamically populated from skills.json) -->
         <section class="project-skills-section" style="margin-bottom: 3rem;">
             <h2>Skills Applied in this Project</h2>
-            <div id="project-skills" style="display: flex; flex-wrap: wrap; gap: 0.5rem;"></div>
+            <div id="project-skills" data-project-name="project_template" style="display: flex; flex-wrap: wrap; gap: 0.5rem;"></div>
         </section>
 
-        <!-- JavaScript to pull matching skills from skills.json -->
-        <script>
-            // CHANGE THIS string for each new project page to match the "project" name in skills.json
-            const currentProjectName = "project_template"; 
-
-            fetch('../skills.json') 
-                .then(response => response.json())
-                .then(skills => {
-                    const container = document.getElementById('project-skills');
-                    
-                    // Filter the skills based on the current project name
-                    const filteredSkills = skills.filter(s => s.project === currentProjectName);
-                    
-                    filteredSkills.forEach(skill => {
-                        const span = document.createElement('span');
-                        span.className = 'tag';
-                        span.textContent = skill.name;
-                        container.appendChild(span);
-                    });
-                })
-                .catch(error => console.error('Error loading skills for project:', error));
-        </script>
-
-        
        <!-- CONTACT SECTION -->
         <section id="contact" class="project-contact-section" style="margin-bottom: 3rem;">
             <h2>Contact</h2>
@@ -122,6 +98,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="../markdown-loader.js"></script>
+    <script src="../project.js"></script>
 
 </body>
 </html>

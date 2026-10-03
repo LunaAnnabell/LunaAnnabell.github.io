@@ -110,26 +110,8 @@
         <!-- AUTOMATIC SKILLS SECTION -->
         <section style="margin-bottom: 3rem;">
             <h2>Skills Applied in this Project</h2>
-            <div id="project-skills" style="display: flex; flex-wrap: wrap; gap: 0.5rem;"></div>
+            <div id="project-skills" data-project-name="Gabelsland" style="display: flex; flex-wrap: wrap; gap: 0.5rem;"></div>
         </section>
-
-        <script>
-            const currentProjectName = "Gabelsland"; 
-
-            fetch('../skills.json') 
-                .then(response => response.json())
-                .then(skills => {
-                    const container = document.getElementById('project-skills');
-                    const filteredSkills = skills.filter(s => s.project === currentProjectName);
-                    filteredSkills.forEach(skill => {
-                        const span = document.createElement('span');
-                        span.className = 'tag';
-                        span.textContent = skill.name;
-                        container.appendChild(span);
-                    });
-                })
-                .catch(error => console.error('Error loading skills for project:', error));
-        </script>
 
         <!-- CONTACT SECTION -->
         <section id="contact" style="margin-bottom: 3rem;">
@@ -150,6 +132,7 @@
             </div>
         </section>
     </div>
+    <script src="../project.js"></script>
 
 </body>
 </html>
