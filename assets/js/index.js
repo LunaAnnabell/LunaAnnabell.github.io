@@ -1,4 +1,4 @@
-const renderSkills = async () => {
+﻿const renderSkills = async () => {
     const container = document.getElementById('skills-grid-container');
     const toggle = document.getElementById('skill-subcategory-toggle');
 
@@ -7,7 +7,7 @@ const renderSkills = async () => {
     }
 
     try {
-        const response = await fetch('skills.json');
+        const response = await fetch('assets/data/skills.json');
         const skills = await response.json();
         const groupedSkills = skills.reduce((groups, skill) => {
             if (!groups[skill.category]) {

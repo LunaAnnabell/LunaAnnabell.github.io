@@ -1,4 +1,4 @@
-document.querySelectorAll('.scattered-frame').forEach((frame) => {
+﻿document.querySelectorAll('.scattered-frame').forEach((frame) => {
     frame.setAttribute('tabindex', '0');
     frame.setAttribute('role', 'button');
     frame.setAttribute('aria-label', 'Zoom artwork');

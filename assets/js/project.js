@@ -1,4 +1,4 @@
-const loadProjectSkills = async () => {
+﻿const loadProjectSkills = async () => {
     const skillsContainer = document.getElementById('project-skills');
     const projectName = skillsContainer?.dataset.projectName;
 
@@ -7,7 +7,7 @@ const loadProjectSkills = async () => {
     }
 
     try {
-        const response = await fetch('../skills.json');
+        const response = await fetch('../assets/data/skills.json');
         const skills = await response.json();
         const projectSkills = skills.filter((skill) => skill.project === projectName);
 

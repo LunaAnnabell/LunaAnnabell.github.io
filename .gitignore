@@ -1,0 +1,12 @@
+# Ignore a specific file
+
+projects/Beneath.txt
+projects/I'll_just_ask_ChatGPT...txt
+projects/In_Case_You_Need_Cleaning.txt
+projects/project_template.txt
+projects/Social_Engagement_Through_Interactive_Design.txt
+
+
+# Ignore a whole folder
+Extract/
+temp/

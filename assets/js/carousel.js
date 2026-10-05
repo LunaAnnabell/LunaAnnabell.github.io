@@ -1,4 +1,4 @@
-document.querySelectorAll('[data-carousel]').forEach((carousel) => {
+﻿document.querySelectorAll('[data-carousel]').forEach((carousel) => {
     const slides = Array.from(carousel.querySelectorAll('.carousel-slide'));
     const previousButton = carousel.querySelector('[data-carousel-previous]');
     const nextButton = carousel.querySelector('[data-carousel-next]');
