@@ -7,7 +7,7 @@
     }
 
     try {
-        const response = await fetch('../assets/data/skills.json');
+        const response = await fetch('../../assets/data/skills.json');
         const skills = await response.json();
         const projectSkills = skills.filter((skill) => skill.project === projectName);
 
