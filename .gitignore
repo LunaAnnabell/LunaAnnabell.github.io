@@ -1,11 +1,11 @@
 # Ignore a specific file
 
-content\projects\Beneath.txt
-content\projects\I'll_just_ask_ChatGPT...txt
-content\projects\In_Case_You_Need_Cleaning.txt
-content\projects\project_template.txt
-content\projects\Social_Engagement_Through_Interactive_Design.txt
-
+content/projects/Beneath.txt
+content/projects/I'll_just_ask_ChatGPT...txt
+content/projects/In_Case_You_Need_Cleaning.txt
+content/projects/Social_Engagement_Through_Interactive_Design.txt
+content/projects/project_template.txt
+content/projects/*.txt
 
 # Ignore a whole folder
 Extract/
