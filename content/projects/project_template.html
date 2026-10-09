@@ -1,16 +1,16 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Name – Case – Luna Annabell Linné Jensen</title>
+    <title>Project Title – Case – Luna Annabell Linné Jensen</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 <body>
 
     <nav class="site-header" aria-label="Main navigation">
-        <a href="../../index.html" class="site-brand">Luna Annabell</a>
+        <a href="../../index.html" class="site-brand">Luna Annabell Linné Jensen</a>
         <div class="site-nav-links">
             <a href="../../index.html">Portfolio</a>
             <a href="../../art.html">Art Portfolio</a>
@@ -24,70 +24,76 @@
         <!-- Back to front page button -->
         <p style="margin-bottom: 2rem;"><a href="../../index.html" class="btn">← Back to front page</a></p>
 
-              <!-- Informations -->
+        <!-- Project Header -->
         <header style="margin-bottom: 3rem;">
             <div class="header-container">
                 <div class="header-text" style="text-align: left;">
-                    <span class="tag">Art and Technology - Bachelor Project</span>
-                    <h1 style="font-size: 2rem; margin-top: 0.5rem; margin-bottom: 0.5rem;">Title</h1>
-                    <h2 style="color: var(--accent); font-weight: 500; margin-bottom: 1rem;">Subtitle</h2>
+                    <span class="tag">Field / Specialization / Semester</span>
+                    <h1 style="font-size: 2rem; margin-top: 0.5rem; margin-bottom: 0.5rem;">Project Title</h1>
+                    <h2 style="color: var(--accent); font-weight: 500; margin-bottom: 1rem;">Project subtitle or core research question</h2>
+                    
                     <!-- Quick Facts Bar -->
                     <div style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 1rem; border-radius: 4px; margin-bottom: 1.5rem; font-size: 0.9rem; line-height: 1.5; border-left: 3px solid var(--accent);">
-                        <p style="margin: 0 0 0.3rem 0;"><strong>Role:</strong> </p>
-                        <p style="margin: 0 0 0.3rem 0;"><strong>Context:</strong> </p>
-                        <p style="margin: 0;"><strong>Timeframe:</strong> </p>
+                        <p style="margin: 0 0 0.3rem 0;"><strong>Role:</strong> Your role in the project</p>
+                        <p style="margin: 0 0 0.3rem 0;"><strong>Context:</strong> Academic context, partner, or course</p>
+                        <p style="margin: 0;"><strong>Timeframe:</strong> Semester / Year</p>
                     </div>
         
-                    <!-- body  & context -->
+                    <!-- Description -->
                     <p class="bio" style="margin: 0; font-size: 0.95rem; color: var(--text-muted);">
-                        <em>Description:</em>   </p>
+                        <em>Description:</em> Short summary explaining the core challenge, problem statement, and methodology of the project.
+                    </p>
                 </div>
                 <div class="header-image" style="max-width: 300px; width: 100%;">
                    <div class="image-frame project-detail-view">
-                        <img src="../../assets/images/beneath_the_weight.jpg" alt="Beneath The Weight Mockup" class="project-img">
+                        <img src="../../assets/images/extracted_images/placeholder.png" alt="Project visual" class="project-img">
                    </div>
                 </div>
             </div>
         </header>
 
-        
-
         <!-- SOLUTION AND CONCLUSION -->
         <section style="margin-bottom: 3rem;">
             <h2>Solution and Conclusion</h2>
             <p style="color: var(--text-muted); margin-bottom: 1rem;">
-                <strong>Conclusion:</strong> Add the project result, impact, or key learning here.
+                <strong>Conclusion:</strong> Overview of the final result, technical architecture, evaluation findings, and key takeaways.
             </p>
 
-            <!-- VISUALS & ARTIFACTS -->
+            <!-- VISUALS & ARTIFACTS (Carousel) -->
             <div class="solution-visuals">
                 <h3>Visuals & Artifacts</h3>
-            <div class="image-frame" style="text-align: center; padding: 2rem; color: var(--text-muted);">
-                [ Insert Project Visuals / Screenshots / Code Snippets Here ]
-            </div>
+                <div class="project-carousel" data-carousel tabindex="0" aria-label="Project visuals">
+                    <button type="button" class="carousel-button" data-carousel-previous aria-label="Previous image">&larr;</button>
+                    <div class="carousel-viewport">
+                        <img src="../../assets/images/extracted_images/placeholder_1.png" alt="Project visual 1" class="carousel-slide">
+                        <img src="../../assets/images/extracted_images/placeholder_2.png" alt="Project visual 2" class="carousel-slide" hidden>
+                    </div>
+                    <button type="button" class="carousel-button" data-carousel-next aria-label="Next image">&rarr;</button>
+                    <p class="carousel-caption" data-carousel-caption></p>
+                    <span class="carousel-status" data-carousel-status aria-live="polite">1 / 2</span>
+                </div>
             </div>
         </section>
 
-        <!-- AUTOMATIC SKILLS SECTION (Dynamically populated from skills.json) -->
+        <!-- AUTOMATIC SKILLS SECTION (Populated from skills.csv) -->
         <section class="project-skills-section" style="margin-bottom: 3rem;">
             <h2>Skills Applied in this Project</h2>
-            <div id="project-skills" data-project-name="project_template" style="display: flex; flex-wrap: wrap; gap: 0.5rem;"></div>
+            <!-- Change data-project-name to match the project name in skills.csv -->
+            <div id="project-skills" data-project-name="Project_Name_Here" style="display: flex; flex-wrap: wrap; gap: 0.5rem;"></div>
         </section>
 
-       <!-- CONTACT SECTION -->
+        <!-- CONTACT SECTION -->
         <section id="contact" class="project-contact-section" style="margin-bottom: 3rem;">
             <h2>Contact</h2>
             <div class="contact-card">
                 <div class="contact-item">
                     <strong>LinkedIn</strong>
-                    <span><a href="https://www.linkedin.com/in/luna-annabell-linn%C3%A9-jensen" target="_blank">www.linkedin.com/in/luna-annabell-linné-jensen</a></span>
+                    <span><a href="https://www.linkedin.com/in/luna-annabell-linn%C3%A9-jensen" target="_blank">LinkedIn Profile</a></span>
                 </div>
-
                 <div class="contact-item">
                     <strong>GitHub</strong>
-                    <span><a href="https://github.com/LunaAnnabell" target="_blank">https://github.com/LunaAnnabell</a></span>
+                    <span><a href="https://github.com/LunaAnnabell" target="_blank">GitHub Profile</a></span>
                 </div>
-
                 <div class="contact-item">
                     <strong>Email</strong>
                     <span><a href="mailto:Lunaannabell@outlook.dk">lunaannabell@outlook.dk</a></span>
@@ -96,9 +102,7 @@
         </section>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="../markdown-loader.js"></script>
+    <script src="../../assets/js/carousel.js"></script>
     <script src="../../assets/js/project.js"></script>
-
 </body>
 </html>

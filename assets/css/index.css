@@ -97,10 +97,16 @@ body::before {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
 }
 
-.skill-link {
+a.skill-link {
     color: inherit;
     text-decoration: none;
-    cursor: help;
+    cursor: pointer;
+}
+
+span.skill-link {
+    color: inherit;
+    text-decoration: none;
+    cursor: default;
 }
 
 .hero-art-display {

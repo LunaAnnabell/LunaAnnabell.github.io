@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -41,17 +41,15 @@
         
                     <!-- body  & context -->
                     <p class="bio" style="margin: 0; font-size: 0.95rem; color: var(--text-muted);">
-                        <em>Description:</em> The project investigates the potential and limitations of automating 
-                        manual appointment coordination through Agentic Artificial Intelligence (AAI). Moving past 
-                        a basic first rendition focused purely on Streamlit/MySQL CRUD digitisation, the second
-                         prototype introduces a conversational user interface (CUI) powered by an LLM (OpenAI) 
-                         integrated via a Flask backend. The system evaluates user input, calendar availability 
-                         (Google Calendar API), and local weather data (DMI) to autonomously recommend and schedule 
-                         cleaning appointments.</p>
+                        <em>Description:</em> his project pushes the boundaries of modern enterprise software by replacing tedious manual 
+                        scheduling with Agentic Artificial Intelligence (AAI). For employers, it highlights high-value software engineering
+                         competencies: building a robust Flask backend, executing relational database design (MySQL/ER diagrams), integrating
+                          external APIs (Google Calendar and DMI weather forecasts), and embedding OpenAI LLMs with custom JSON schemas for
+                           tool-calling</p>
                 </div>
                 <div class="header-image" style="max-width: 300px; width: 100%;">
                    <div class="image-frame project-detail-view">
-                        <img src="../../assets/images/extracted_images/In_Case_U_N_C/Screenshot/in_case_u_n_c_screenshot_05.png" alt="In Case You Need Cleaning project" class="project-img">
+                        <img src="../../assets/images/extracted_images/In_Case_U_N_C/Screenshot/in_case_u_n_c_screenshot_05.png" alt="Data Cleaners web app dashboard with overview cards and AI booking assistant" class="project-img">
                    </div>
                 </div>
             </div>
@@ -63,8 +61,10 @@
         <section style="margin-bottom: 3rem;">
             <h2>Solution and Conclusion</h2>
             <p style="color: var(--text-muted); margin-bottom: 1rem;">
-                <strong>Conclusion:</strong> The project implemented a hybrid UI combining conversational AI flexibility with structured visual widgets (weather, addresses, profiles, and calendars) to minimize user cognitive load. Evaluated through expert-based Heuristic Evaluations using Nielsen's heuristics, the project concluded that while AAI drastically reduces administrative burdens, it introduces challenges regarding user trust, system transparency, and conversational predictability, emphasizing that hybrid interfaces are vital to keep users in control.
-            </p>
+                <strong>Conclusion:</strong> Moving beyond basic CRUD digitization, the system features a hybrid user interface that pairs 
+                conversational AI flexibility with structured visual widgets (calendars, weather panels, and user profiles) to minimize 
+                cognitive load. Evaluated through Nielsen's heuristics, the project offers critical industry insights into system transparency,
+                 error recovery, and user trust when deploying autonomous agents in everyday workflows. </p>
 
             <!-- VISUALS & ARTIFACTS -->
             <div class="solution-visuals">
@@ -72,13 +72,15 @@
             <div class="project-carousel" data-carousel tabindex="0" aria-label="In Case You Need Cleaning visuals">
                 <button type="button" class="carousel-button" data-carousel-previous aria-label="Previous image">&larr;</button>
                 <div class="carousel-viewport">
-                    <img src="../../assets/images/extracted_images/In_Case_U_N_C/Figure/in_case_u_n_c_figure_03.jpeg" alt="Project main visual" class="carousel-slide">
-                    <img src="../../assets/images/extracted_images/In_Case_U_N_C/Figure/in_case_u_n_c_figure_05.jpeg" alt="Project figure" class="carousel-slide" hidden>
-                    <img src="../../assets/images/extracted_images/In_Case_U_N_C/Figure/in_case_u_n_c_figure_06.png" alt="Project figure" class="carousel-slide" hidden>
+                    <img src="../../assets/images/extracted_images/In_Case_U_N_C/Figure/in_case_u_n_c_figure_01.jpeg" alt="Problem space diagram showing manual scheduling inefficiencies via SMS and paper binders" data-description="Problem Space Analysis: Workflow breakdown illustrating the communication bottlenecks, SMS inconsistencies, and manual binder lookups of the legacy booking process." class="carousel-slide">
+                    <img src="../../assets/images/extracted_images/In_Case_U_N_C/Figure/in_case_u_n_c_figure_03.jpeg" alt="System architecture diagram illustrating interactions between customer, AI chatbot, server, database, and employees" data-description="Service Ecosystem &amp; User Journey: System diagram connecting user interactions across the AI chatbot, Flask server, database, cleaning staff dispatch, and automated SMS/email reminders." class="carousel-slide" hidden>
+                    <img src="../../assets/images/extracted_images/In_Case_U_N_C/Figure/in_case_u_n_c_figure_07.jpeg" alt="Agentic AI tool-calling diagram connecting Frontend, Flask, and OpenAI GPT" data-description="Agentic AI &amp; Tool-Calling Architecture: Data flow diagram illustrating how the Flask backend coordinates prompt templates, tool lists, and client messages with OpenAI GPT function calling." class="carousel-slide" hidden>
+                    <img src="../../assets/images/extracted_images/In_Case_U_N_C/Figure/in_case_u_n_c_figure_05.jpeg" alt="UML component diagram showing front-end UI, backend services, and external API integrations" data-description="Multi-Tier Architecture Diagram: Component diagram showing separation between the front-end interface, Flask backend (AI Agent, routing, services), and external integrations (OpenAI, Google Calendar, DMI Weather, MySQL)." class="carousel-slide" hidden>
+                    <img src="../../assets/images/extracted_images/In_Case_U_N_C/Figure/in_case_u_n_c_figure_06.png" alt="Entity-relationship diagram showing database tables and relationships for customer appointments and services" data-description="Relational Database ERD: MySQL schema illustrating entities, foreign key relationships, and data types for customers, service addresses, bookings, preferences, and services." class="carousel-slide" hidden>
                 </div>
                 <button type="button" class="carousel-button" data-carousel-next aria-label="Next image">&rarr;</button>
                 <p class="carousel-caption" data-carousel-caption></p>
-                <span class="carousel-status" data-carousel-status aria-live="polite">1 / 3</span>
+                <span class="carousel-status" data-carousel-status aria-live="polite">1 / 5</span>
             </div>
             </div>
         </section>
