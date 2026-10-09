@@ -1,104 +1,82 @@
-# Luna Annabell Linné Jensen | Portfolio
+# Portfolio Website | Luna Annabell Linné Jensen
 
-This repository contains the personal portfolio website for Luna Annabell Linné Jensen, a multidisciplinary designer and developer with a background in digitalisation, application development, interaction design, and art and technology. The site presents selected projects, academic work, creative practice, and professional profile in a responsive, visually focused format.
+Welcome to the repository for my personal portfolio website, published live on GitHub Pages at **[lunaannabell.github.io](https://lunaannabell.github.io)**.
 
-## Overview
+This portfolio presents my work across digitalisation, Human-Computer Interaction (HCI), system development, and creative technology. It brings together selected academic case studies, interactive prototypes, and personal artwork in a responsive, accessible format.
 
-The portfolio highlights:
+---
 
-- Featured project case studies across UX, HCI, AI, and digital interaction
-- Additional creative and technical work from academic and personal projects
-- An art portfolio that reflects the visual and material side of the practice
-- Education, technical skills, and professional background
-- Direct contact links and downloadable CV access
+## 🌐 Live Website
 
-The site is built as a lightweight static web project using HTML, CSS, and JavaScript, making it easy to maintain, host, and extend.
+- **Live Site:** [https://lunaannabell.github.io](https://lunaannabell.github.io)
+- **Author:** Luna Annabell Linné Jensen  
+  *MSc in Digitalisation and Application Development (Cand.it.) • BA in Art and Technology*  
+  *Aalborg University*
 
-## Tech Stack
+---
 
-- HTML5
-- CSS3
-- JavaScript (vanilla)
-- Static media assets for portfolio content and project visuals
-- GitHub Pages compatible structure
+## 📖 Portfolio Highlights & Case Studies
 
-## Project Structure
+The portfolio features in-depth case studies, an art archive, and an interactive skills overview:
 
-```text
-.
-├── index.html              # Homepage and main portfolio landing page
-├── art.html                # Art portfolio page
-├── about.html              # About section page
-├── content/                # Public project content pages
-│   ├── projects/          # Main project case studies
-│   └── other-projects/     # Additional portfolio case studies
-├── assets/                 # Website assets used in production
-│   ├── css/               # Stylesheets
-│   ├── js/                # JavaScript files
-│   ├── data/              # Structured site data (for example, skills.json)
-│   ├── images/            # General website imagery and extracted project media
-│   └── art/               # Personal art portfolio assets
-├── README.md               # Project documentation
-├── .gitignore              # Ignores local-only or non-public files
-├── Extract/                # Local-only conversion/extraction scripts (kept out of the website upload)
-└── temp/                   # Optional local temp folder
-```
+### 1. Featured Case Studies
+- **["I'll just ask ChatGPT..."](https://lunaannabell.github.io/content/projects/I'll_just_ask_ChatGPT....html)**  
+  *Master's Thesis • Qualitative HCI & Conversational AI*  
+  An empirical study investigating how people utilize general-purpose conversational AI when making sense of everyday physical and mental well-being concerns. Based on 20 qualitative interviews analyzed via Reflexive Thematic Analysis.
 
-## Local Development
+- **[In Case You Need Cleaning](https://lunaannabell.github.io/content/projects/In_Case_You_Need_Cleaning.html)**  
+  *Interactive Systems • Agentic AI & Conversational UI*  
+  A prototype exploring AI-assisted appointment coordination, combining an LLM conversational assistant (Flask backend) with structured UI widgets, Google Calendar API, and DMI weather data. Evaluated through Nielsen's usability heuristics.
 
-This is a static website, so there is no build step or backend required.
+- **[Social Engagement Through Interactive Design](https://lunaannabell.github.io/content/projects/Social_Engagement_Through_Interactive_Design.html)**  
+  *Mobile Development • Android (Java/XML) & UX Design*  
+  A user-centered Android application designed to help newcomers discover local events and build social networks in a new city. Built using an open-strict layered architecture in Android Studio.
 
-### Option 1: Open directly in a browser
+- **[Beneath The Weight](https://lunaannabell.github.io/content/projects/Beneath_The_Weight.html)**  
+  *Bachelor Project • Physical Computing & Interactive Sculpture*  
+  A 1:1 scale dynamic sculpture translating climate crisis information flows into responsive physical movement and generative soundscapes using microcontrollers (M5Stack) and Processing.
 
-Open `index.html` in a browser to view the site locally.
+### 2. Art Portfolio
+- **[Art Practice](https://lunaannabell.github.io/art.html)**  
+  A dedicated visual arts section featuring illustrations, drawings, and material explorations that inform and enrich my digital design practice.
 
-### Option 2: Run a local web server
+### 3. About & Skills
+- **[About Page](https://lunaannabell.github.io/about.html):** Background, design philosophy, and downloadable CV.
+- **Interactive Skills Matrix:** A dynamic skills browser on the homepage mapping technical and UX competencies directly to the projects where they were applied.
 
-From the project root, run:
+---
 
-```bash
-python -m http.server 8000
-```
+## 🗂️ Site Structure
 
-Then visit:
+The repository is organized as a lightweight, clean static project:
 
 ```text
-http://localhost:8000
+├── index.html              # Main landing page (hero, featured projects, skills, education)
+├── about.html              # Bio, philosophy, and CV download
+├── art.html                # Visual art and creative practice gallery
+├── content/
+│   └── projects/           # In-depth case study pages for individual projects
+└── assets/
+    ├── css/                # Layout and styling
+    ├── js/                 # Interactive features (skills filter, image carousels)
+    ├── data/               # Structured data (skills.json)
+    ├── images/             # Case study figures, screenshots, and visual assets
+    └── art/                # Visual art portfolio images
 ```
 
-## Deployment
+---
 
-This portfolio is suitable for deployment on GitHub Pages or any static hosting platform.
+## 🛠️ Built With
 
-### GitHub Pages
+- **HTML5 & Semantic CSS** — Responsive, clean layouts with CSS variables
+- **Vanilla JavaScript** — Dynamic project skills rendering and image carousels
+- **GitHub Pages** — Fast, static deployment
 
-1. Push the repository to GitHub.
-2. Open the repository settings.
-3. Enable GitHub Pages.
-4. Select the root folder as the publishing source.
+---
 
-## Project Maintenance
+## 📬 Contact & Connect
 
-To update the portfolio content:
-
-- Edit `index.html` to change featured work, biography, and homepage structure.
-- Update `assets/data/skills.json` to revise the skills overview.
-- Replace assets in `assets/images/` and `assets/art/` with new project or artwork visuals.
-- Adjust styling in `assets/css/` to refine the layout and design system.
-- Keep `Extract/` and any local-processing files out of the public deployment if they are not needed for the website itself.
-
-## Notes
-
-- The site is intentionally lightweight and does not require a framework or server-side processing.
-- Project pages and visual assets are organized for straightforward extension as new work is added.
-- Consistent file naming and relative paths are important when updating sections or media.
-
-## License
-
-This repository is intended for personal portfolio use. If any artwork, assets, or third-party materials are included, their licensing terms should be reviewed separately.
-
-## Contact
-
-- LinkedIn: https://www.linkedin.com/in/luna-annabell-linn%C3%A9-jensen
-- GitHub: https://github.com/LunaAnnabell
-- Email: lunaannabell@outlook.dk
+- **Portfolio:** [LunaAnnabell.github.io](https://lunaannabell.github.io)
+- **LinkedIn:** [linkedin.com/in/luna-annabell-linné-jensen](https://www.linkedin.com/in/luna-annabell-linn%C3%A9-jensen)
+- **Email:** [lunaannabell@outlook.dk](mailto:lunaannabell@outlook.dk)
+- **GitHub:** [@LunaAnnabell](https://github.com/LunaAnnabell)

@@ -177,6 +177,24 @@ header p {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
 }
 
+.about-intro .header-container {
+    margin-bottom: 2.5rem;
+}
+
+.about-intro .hero-bio {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.about-page section {
+    margin-bottom: 3.75rem;
+}
+
+.about-page section > p {
+    margin-bottom: 1.35rem;
+    line-height: 1.75;
+}
+
 /* Alternative Hero Layout Styles */
 .hero-section {
     text-align: center;
@@ -750,7 +768,8 @@ footer .social-links a:hover {
         text-align: center;
     }
     
-    .header-text .bio {
+    .header-text .bio,
+    .about-intro .hero-bio {
         margin: 0 auto 1.5rem auto;
     }
     
