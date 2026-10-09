@@ -10,3 +10,4 @@ content/projects/*.txt
 # Ignore a whole folder
 Extract/
 temp/
+other-projects/
