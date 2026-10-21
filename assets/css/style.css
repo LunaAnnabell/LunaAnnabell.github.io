@@ -796,6 +796,72 @@ footer .social-links a:hover {
 }
 
 /* ==========================================================================
+   Code Blocks & Technical Highlights
+   ========================================================================== */
+.code-container {
+    background: #1e1e24;
+    border: 1px solid #33333b;
+    border-radius: 6px;
+    margin: 1.5rem 0;
+    overflow: hidden;
+}
+
+.code-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #141418;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    font-family: 'Consolas', 'Fira Code', 'Courier New', monospace;
+    color: #9da5b4;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.code-container pre {
+    margin: 0;
+    padding: 1.1rem;
+    overflow-x: auto;
+    font-family: 'Consolas', 'Fira Code', 'Courier New', monospace;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: #e6edf3;
+}
+
+.code-container code {
+    font-family: inherit;
+}
+
+.tech-highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.tech-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 1rem;
+    border-left: 3px solid var(--accent);
+}
+
+.tech-card h4 {
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+    color: var(--text-main);
+}
+
+.tech-card p {
+    margin: 0;
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+/* ==========================================================================
    8. MEDIA QUERIES (RESPONSIVE)
    ========================================================================== */
 @media (max-width: 768px) {

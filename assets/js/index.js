@@ -39,7 +39,8 @@ const projectLinkMap = {
     "socialengagementthroughinteractivedesign": "content/projects/Social_Engagement_Through_Interactive_Design.html",
     "beneaththeweight": "content/projects/Beneath_The_Weight.html",
     "incaseyouneedcleaning": "content/projects/In_Case_You_Need_Cleaning.html",
-    "illjustaskchatgpt": "content/projects/I'll_just_ask_ChatGPT....html"
+    "illjustaskchatgpt": "content/projects/I'll_just_ask_ChatGPT....html",
+    "balancingnutritionandsustainability": "content/projects/Balancing_Nutrition_and_Sustainability.html"
 };
 
 const renderSkills = async () => {

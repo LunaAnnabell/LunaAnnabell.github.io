@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balancing Nutrition and Sustainability – Case – Luna Annabell Linné Jensen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+    <nav class="site-header" aria-label="Main navigation">
+        <a href="../../index.html" class="site-brand">Luna Annabell Linné Jensen</a>
+        <div class="site-nav-links">
+            <a href="../../index.html">Portfolio</a>
+            <a href="../../art.html">Art Portfolio</a>
+            <a href="../../about.html">About</a>
+            <a href="../../index.html#skills">Skills</a>
+            <a href="../../index.html#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="container" style="max-width: 800px;">
+        <!-- Back to front page button -->
+        <p style="margin-bottom: 2rem;"><a href="../../index.html" class="btn">← Back to front page</a></p>
+
+        <!-- Project Header -->
+        <header style="margin-bottom: 3rem;">
+            <div class="header-container">
+                <div class="header-text" style="text-align: left;">
+                    <span class="tag">Full-Stack Web Development &amp; Data Visualization / AAU</span>
+                    <h1 style="font-size: 2rem; margin-top: 0.5rem; margin-bottom: 0.5rem;">Balancing Nutrition and Sustainability</h1>
+                    <h2 style="color: var(--accent); font-weight: 500; margin-bottom: 1rem;">Full-Stack Dietary &amp; Climate Tracking Web Application</h2>
+                    <!-- Quick Facts Bar -->
+                    <div style="background: var(--card-bg); border: 1px solid var(--border-color); padding: 1rem; border-radius: 4px; margin-bottom: 1.5rem; font-size: 0.9rem; line-height: 1.5; border-left: 3px solid var(--accent);">
+                        <p style="margin: 0 0 0.3rem 0;"><strong>Role:</strong> Full-Stack Developer &amp; UX Researcher</p>
+                        <p style="margin: 0 0 0.3rem 0;"><strong>Tech Stack:</strong> Python (Flask), SQLite3, JavaScript, Google Charts API, HTML5 / CSS3</p>
+                        <p style="margin: 0 0 0.3rem 0;"><strong>Context:</strong> Aalborg University (Institute of Computer Science) &ndash; Web Solution Development</p>
+                        <p style="margin: 0;"><strong>Timeframe:</strong> Fall 2024</p>
+                    </div>
+
+                    <!-- Description -->
+                    <p class="bio" style="margin: 0; font-size: 0.95rem; color: var(--text-muted);">
+                        <em>Overview:</em> While many young consumers aim to adopt climate-conscious diets, balancing environmental impact with proper nutritional intake remains difficult without accessible tools. This full-stack web application integrates Denmark's official carbon dataset (<em>Den Store Klimadatabase</em>) with nutritional data to provide users with a dynamic meal-building interface, instant carbon calculations, and interactive visualizations benchmarking daily choices against national averages.
+                    </p>
+                </div>
+                <div class="header-image" style="max-width: 300px; width: 100%;">
+                   <div class="image-frame project-detail-view">
+                        <img src="../../assets/images/extracted_images/Balancing_N_a_S/Screenshot/balancing_n_a_s_screenshot_03.png" alt="Web app showing an ingredient search and a table of selected foods with their CO2, protein, carbs, fat and calories" class="project-img">
+                   </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ARCHITECTURE & SOLUTION OVERVIEW -->
+        <section style="margin-bottom: 3rem;">
+            <h2>Architecture &amp; Key Features</h2>
+            <p style="color: var(--text-muted); margin-bottom: 1.5rem;">
+                The platform is architected around a normalized SQLite relational database and a Flask backend. It supports secure session handling, an interactive multi-ingredient meal cart with dynamic recalculation, and automated generation of Google Charts to deliver clear, actionable feedback on dietary balance and environmental impact.
+            </p>
+
+            <!-- Technical Highlights Grid -->
+            <div class="tech-highlight-grid">
+                <div class="tech-card">
+                    <h4>Dynamic Calculation Engine</h4>
+                    <p>Normalizes reference dataset entries per 100g, recalculates caloric density via macronutrient weighting (<code>4P + 4C + 9F</code>), and scales kg CO&sub2; emissions to custom portion sizes.</p>
+                </div>
+                <div class="tech-card">
+                    <h4>Relational Database Design</h4>
+                    <p>Structured SQLite schema linking user accounts (<code>bruger</code>), baseline climate datasets (<code>Food_product</code>), and user meal logs (<code>UserFoodLog</code>) using foreign keys.</p>
+                </div>
+                <div class="tech-card">
+                    <h4>Session &amp; Cart State</h4>
+                    <p>Maintains dynamic meal building state within Flask user sessions, allowing ingredient addition, item removal, and aggregate recalibration without unnecessary DB roundtrips.</p>
+                </div>
+                <div class="tech-card">
+                    <h4>Data Visualization</h4>
+                    <p>Dynamic Google Charts rendering macronutrient distribution donuts and calorie vs. CO&sub2; scatter plots compared against the Danish national daily baseline (7.10 kg CO&sub2;).</p>
+                </div>
+            </div>
+
+            <!-- VISUALS & ARTIFACTS -->
+            <div class="solution-visuals" style="margin-top: 2rem;">
+                <h3>System Visuals &amp; Diagrams</h3>
+                <div class="project-carousel" data-carousel tabindex="0" aria-label="Balancing Nutrition and Sustainability visuals">
+                    <button type="button" class="carousel-button" data-carousel-previous aria-label="Previous image">&larr;</button>
+                    <div class="carousel-viewport">
+                        <img src="../../assets/images/extracted_images/Balancing_N_a_S/Screenshot/balancing_n_a_s_screenshot_03.png" alt="Web app search page with a table of selected foods and totals for CO2, protein, carbs, fat and calories" data-description="Meal Builder Interface: Real-time ingredient search, custom gram input, and instant totals for CO2 emissions, protein, carbs, fat, and calories." class="carousel-slide">
+                        <img src="../../assets/images/extracted_images/Balancing_N_a_S/Screenshot/balancing_n_a_s_screenshot_01.png" alt="Donut chart of the macronutrient breakdown next to a general information card about a balanced diet" data-description="Macronutrient Visualizer: Client-side Google Charts donut visualization illustrating the protein/carbohydrate/fat ratio for the logged meal." class="carousel-slide" hidden>
+                        <img src="../../assets/images/extracted_images/Balancing_N_a_S/Screenshot/balancing_n_a_s_screenshot_02.png" alt="Scatter chart of calories versus CO2 emissions and a card comparing the day's CO2 with the average daily intake" data-description="Carbon Footprint Scatter Plot: Evaluates meal calorie density against emissions and benchmarks the result directly against the Danish daily intake average (7.10 kg CO2)." class="carousel-slide" hidden>
+                        <img src="../../assets/images/extracted_images/Balancing_N_a_S/Figure/balancing_n_a_s_figure_01.png" alt="Flowchart of sign-up, log-in, food search, input validation, calculation of nutrition and CO2, and removal of foods" data-description="System Architecture Flowchart: Algorithmic user flow mapping registration, search queries, data sanitization, backend calculations, and session updates." class="carousel-slide" hidden>
+                        <img src="../../assets/images/extracted_images/Balancing_N_a_S/Figure/balancing_n_a_s_figure_02.png" alt="Database schema with tables for users, food products, and the user food log connected by keys" data-description="Relational Database Schema: Entity-relationship diagram demonstrating primary and foreign key structures connecting users, food products, and meal logs." class="carousel-slide" hidden>
+                    </div>
+                    <button type="button" class="carousel-button" data-carousel-next aria-label="Next image">&rarr;</button>
+                    <p class="carousel-caption" data-carousel-caption></p>
+                    <span class="carousel-status" data-carousel-status aria-live="polite">1 / 5</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CODE IMPLEMENTATION HIGHLIGHT -->
+        <section style="margin-bottom: 3rem;">
+            <h2>Key Implementation Logic</h2>
+            <p style="color: var(--text-muted); margin-bottom: 1rem;">
+                The backend coordinates user input with reference food data, computing scaled nutritional and emission values and synchronizing the user's active session state:
+            </p>
+
+            <div class="code-container">
+                <div class="code-header">
+                    <span>Python / Flask &ndash; app.py</span>
+                    <span>Meal Calculation &amp; Session Engine</span>
+                </div>
+                <pre><code># Dynamic portion scaling and meal cart state handling
+@app.route("/add_food", methods=["POST"])
+def add_food():
+    product_name = request.form.get("Navn")
+    grams = float(request.form.get("grams", 0))
+
+    # Query baseline nutritional & climate metrics from SQLite
+    item = db.execute("SELECT * FROM Food_product WHERE Navn = ?", product_name).fetchone()
+    if item and grams > 0:
+        factor = grams / 100.0
+        protein = round(item["Protein"] * factor, 1)
+        carbs = round(item["Kulhydrat"] * factor, 1)
+        fat = round(item["Fedt"] * factor, 1)
+        calories = round((protein * 4) + (carbs * 4) + (fat * 9))
+        co2_kg = round((item["CO2"] * grams) / 1000.0, 3)
+
+        # Append to active session and update meal totals
+        selected_foods = session.get("selected_foods", [])
+        selected_foods.append({
+            "name": product_name, "grams": grams,
+            "protein": protein, "carbs": carbs, "fat": fat,
+            "calories": calories, "co2": co2_kg
+        })
+        session["selected_foods"] = selected_foods
+
+    return redirect("/search")</code></pre>
+            </div>
+        </section>
+
+        <!-- AUTOMATIC SKILLS SECTION -->
+        <section class="project-skills-section" style="margin-bottom: 3rem;">
+            <h2>Skills Applied in this Project</h2>
+            <div id="project-skills" data-project-name="Balancing_Nutrition_and_Sustainability" style="display: flex; flex-wrap: wrap; gap: 0.5rem;"></div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="project-contact-section" style="margin-bottom: 3rem;">
+            <h2>Contact</h2>
+            <div class="contact-card">
+                <div class="contact-item">
+                    <strong>LinkedIn</strong>
+                    <span><a href="https://www.linkedin.com/in/luna-annabell-linn%C3%A9-jensen" target="_blank">www.linkedin.com/in/luna-annabell-linné-jensen</a></span>
+                </div>
+
+                <div class="contact-item">
+                    <strong>Email</strong>
+                    <span><a href="mailto:Lunaannabell@outlook.dk">lunaannabell@outlook.dk</a></span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="../../assets/js/carousel.js"></script>
+    <script src="../../assets/js/project.js"></script>
+</body>
+</html>
+

@@ -11,6 +11,7 @@ content/projects/*.txt
 Extract/
 temp/
 other-projects/
+Instagram/
 
 # Unused art assets
 assets/art/Scroll/
@@ -19,7 +20,6 @@ assets/art/Main/finished_main_02.png
 assets/art/Main/finished_main_03.png
 
 # Unused extracted project image folders
-assets/images/extracted_images/Balancing_N_a_S/
 assets/images/extracted_images/Gabelsland/
 assets/images/extracted_images/Hope/
 assets/images/extracted_images/Media_i_R_t_N/
